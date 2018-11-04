@@ -1,0 +1,6 @@
+framework module Amadeus {
+  umbrella header "Amadeus-umbrella.h"
+
+  export *
+  module * { export * }
+}
