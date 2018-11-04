@@ -30,7 +30,7 @@
 		EAD7B1C4218F49B500C23760 = {
 			isa = PBXGroup;
 			children = (
-				EAD7B1D0218F49B500C23760 /* Amadeus */,
+				EAD7B1D0218F49B500C23760 /* Source */,
 				EAD7B1CF218F49B500C23760 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,13 +43,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EAD7B1D0218F49B500C23760 /* Amadeus */ = {
+		EAD7B1D0218F49B500C23760 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				EAD7B1D1218F49B500C23760 /* Amadeus.h */,
 				EAD7B1D2218F49B500C23760 /* Info.plist */,
 			);
-			path = Amadeus;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +188,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -246,7 +246,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -268,7 +268,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Amadeus/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +293,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Amadeus/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

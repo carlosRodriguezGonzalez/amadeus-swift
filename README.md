@@ -1,0 +1,1 @@
+# Amadeus Swift SDK
