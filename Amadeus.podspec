@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Amadeus"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Swift library for the Amadeus travel APIs, providing hotel, flight, airport, and other travel related APIs"
   s.homepage     = "https://github.com/carlosRodriguezGonzalez/amadeus-swift"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/carlosRodriguezGonzalez/amadeus-swift.git", :tag => s.version }
 
-  s.source_files = 'Source', 'Source/**/*', 'Source/*.swift'
+  s.source_files = 'Source/*.swift'
 end
