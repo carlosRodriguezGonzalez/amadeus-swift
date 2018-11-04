@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		68269131F900673BC83ED62A /* Pods_Amadeus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB197647685023AB491A8B /* Pods_Amadeus.framework */; };
+		D4AB351CC0326B121C8DA4C6 /* Pods_AmadeusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3637D24B29675BD53705DDE /* Pods_AmadeusTests.framework */; };
 		EAD7B1D3218F49B500C23760 /* Amadeus.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD7B1D1218F49B500C23760 /* Amadeus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAD7B1DC218F519D00C23760 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DB218F519D00C23760 /* HTTPRequest.swift */; };
 		EAD7B1DE218F5ADD00C23760 /* Amadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DD218F5ADD00C23760 /* Amadeus.swift */; };
@@ -31,7 +32,10 @@
 /* Begin PBXFileReference section */
 		1A52FCF6B1826516C0EF3351 /* Pods-Amadeus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amadeus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Amadeus/Pods-Amadeus.release.xcconfig"; sourceTree = "<group>"; };
 		49CB197647685023AB491A8B /* Pods_Amadeus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Amadeus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96741F0A8EEE294CCBAF212F /* Pods-AmadeusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmadeusTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmadeusTests/Pods-AmadeusTests.release.xcconfig"; sourceTree = "<group>"; };
+		D3637D24B29675BD53705DDE /* Pods_AmadeusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmadeusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36989E0E6371B7357EDB4B6 /* Pods-Amadeus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amadeus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amadeus/Pods-Amadeus.debug.xcconfig"; sourceTree = "<group>"; };
+		E6FECA82AE43B379B30F0579 /* Pods-AmadeusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmadeusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmadeusTests/Pods-AmadeusTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EAD7B1CE218F49B500C23760 /* Amadeus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amadeus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD7B1D1218F49B500C23760 /* Amadeus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Amadeus.h; sourceTree = "<group>"; };
 		EAD7B1D2218F49B500C23760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD7B223218F663D00C23760 /* Amadeus.framework in Frameworks */,
+				D4AB351CC0326B121C8DA4C6 /* Pods_AmadeusTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				49CB197647685023AB491A8B /* Pods_Amadeus.framework */,
+				D3637D24B29675BD53705DDE /* Pods_AmadeusTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -78,6 +84,8 @@
 			children = (
 				E36989E0E6371B7357EDB4B6 /* Pods-Amadeus.debug.xcconfig */,
 				1A52FCF6B1826516C0EF3351 /* Pods-Amadeus.release.xcconfig */,
+				E6FECA82AE43B379B30F0579 /* Pods-AmadeusTests.debug.xcconfig */,
+				96741F0A8EEE294CCBAF212F /* Pods-AmadeusTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -186,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAD7B228218F663D00C23760 /* Build configuration list for PBXNativeTarget "AmadeusTests" */;
 			buildPhases = (
+				3AE719A86A923DE5D7C8BD66 /* [CP] Check Pods Manifest.lock */,
 				EAD7B21A218F663D00C23760 /* Sources */,
 				EAD7B21B218F663D00C23760 /* Frameworks */,
 				EAD7B21C218F663D00C23760 /* Resources */,
+				A7E40180967546453B538806 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +281,50 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AE719A86A923DE5D7C8BD66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmadeusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7E40180967546453B538806 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AmadeusTests/Pods-AmadeusTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmadeusTests/Pods-AmadeusTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -486,9 +540,10 @@
 		};
 		EAD7B226218F663D00C23760 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6FECA82AE43B379B30F0579 /* Pods-AmadeusTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45V7X75U5D;
+				DEVELOPMENT_TEAM = 2DFQ7N4YZX;
 				INFOPLIST_FILE = AmadeusTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -505,9 +560,10 @@
 		};
 		EAD7B227218F663D00C23760 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96741F0A8EEE294CCBAF212F /* Pods-AmadeusTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 45V7X75U5D;
+				DEVELOPMENT_TEAM = 2DFQ7N4YZX;
 				INFOPLIST_FILE = AmadeusTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
