@@ -11,24 +11,38 @@ import SwiftyJSON
 
 public typealias ServiceResponse = (JSON, NSError?) -> Void
 
-public func makeHTTPGetRequestAuth(_ path: String, auth: String, onCompletion: @escaping ServiceResponse) {
-    let request = NSMutableURLRequest(url: URL(string: path)!)
+fileprivate let baseURL = "https://test.api.amadeus.com/"
+
+public func makeHTTPGetRequestAuth(_ path: String, auth: String, body: String, onCompletion: @escaping ServiceResponse) {
+    let url = baseURL + path
+    let request = NSMutableURLRequest(url: URL(string: url)!)
+    request.httpBody = body.data(using: String.Encoding.utf8);
     if(auth != ""){
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.setValue("jwt \(auth)", forHTTPHeaderField: "Authorization")
+        request.setValue("\(auth)", forHTTPHeaderField: "Bearer-Token")
     }
     
     let session = URLSession.shared
-    
     let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error -> Void in
-        //onCompletion(data!, error as NSError?)
+        
+        do{
+            if let jsonData = data {
+                let json:JSON = try JSON(data: jsonData)
+                onCompletion(json, nil)
+            } else {
+                onCompletion(JSON.null, error as NSError?)
+            }
+        }catch let err as NSError{
+            print("error:",err)
+        }
+        
     })
     task.resume()
 }
 
 public func makeHTTPPostRequest(_ path: String, body: String, onCompletion: @escaping ServiceResponse) {
-    
-    let request = NSMutableURLRequest(url: URL(string: path)!)
+    let url = baseURL + path
+    let request = NSMutableURLRequest(url: URL(string: url)!)
     request.httpMethod = "POST"
     request.httpBody = body.data(using: String.Encoding.utf8);
     

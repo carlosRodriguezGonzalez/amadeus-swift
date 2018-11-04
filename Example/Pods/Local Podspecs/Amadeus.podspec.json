@@ -1,6 +1,6 @@
 {
   "name": "Amadeus",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "summary": "Swift library for the Amadeus travel APIs, providing hotel, flight, airport, and other travel related APIs",
   "homepage": "https://github.com/carlosRodriguezGonzalez/amadeus-swift",
   "license": {
@@ -17,7 +17,7 @@
   "swift_version": "4.2",
   "source": {
     "git": "https://github.com/carlosRodriguezGonzalez/amadeus-swift.git",
-    "tag": "0.0.4"
+    "tag": "0.0.5"
   },
   "source_files": "Source/*.swift",
   "dependencies": {

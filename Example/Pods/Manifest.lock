@@ -1,5 +1,5 @@
 PODS:
-  - Amadeus (0.0.4):
+  - Amadeus (0.0.5):
     - SwiftyJSON
   - SwiftyJSON (4.2.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../../Amadeus"
 
 SPEC CHECKSUMS:
-  Amadeus: 2799953354fc882d489bbd100900d53ff94179de
+  Amadeus: 3d94aa585f0e34989071fd7746ca5d2b7c24a6fa
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
 PODFILE CHECKSUM: df84ab9344ccbbe40df19df8afc3156b903f847b

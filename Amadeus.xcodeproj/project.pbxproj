@@ -15,6 +15,7 @@
 		EAD7B1E0218F5B1100C23760 /* AuthAmadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DF218F5B1100C23760 /* AuthAmadeus.swift */; };
 		EAD7B221218F663D00C23760 /* AmadeusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B220218F663D00C23760 /* AmadeusTests.swift */; };
 		EAD7B223218F663D00C23760 /* Amadeus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD7B1CE218F49B500C23760 /* Amadeus.framework */; };
+		EAD7B22A218F674500C23760 /* ShoppingAmadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B229218F674500C23760 /* ShoppingAmadeus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		EAD7B21E218F663D00C23760 /* AmadeusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmadeusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD7B220218F663D00C23760 /* AmadeusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmadeusTests.swift; sourceTree = "<group>"; };
 		EAD7B222218F663D00C23760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD7B229218F674500C23760 /* ShoppingAmadeus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAmadeus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				EAD7B1DB218F519D00C23760 /* HTTPRequest.swift */,
 				EAD7B1DD218F5ADD00C23760 /* Amadeus.swift */,
 				EAD7B1DF218F5B1100C23760 /* AuthAmadeus.swift */,
+				EAD7B229218F674500C23760 /* ShoppingAmadeus.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD7B22A218F674500C23760 /* ShoppingAmadeus.swift in Sources */,
 				EAD7B1DE218F5ADD00C23760 /* Amadeus.swift in Sources */,
 				EAD7B1DC218F519D00C23760 /* HTTPRequest.swift in Sources */,
 				EAD7B1E0218F5B1100C23760 /* AuthAmadeus.swift in Sources */,
