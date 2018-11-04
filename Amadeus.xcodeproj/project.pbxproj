@@ -12,7 +12,19 @@
 		EAD7B1DC218F519D00C23760 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DB218F519D00C23760 /* HTTPRequest.swift */; };
 		EAD7B1DE218F5ADD00C23760 /* Amadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DD218F5ADD00C23760 /* Amadeus.swift */; };
 		EAD7B1E0218F5B1100C23760 /* AuthAmadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DF218F5B1100C23760 /* AuthAmadeus.swift */; };
+		EAD7B221218F663D00C23760 /* AmadeusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B220218F663D00C23760 /* AmadeusTests.swift */; };
+		EAD7B223218F663D00C23760 /* Amadeus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD7B1CE218F49B500C23760 /* Amadeus.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAD7B224218F663D00C23760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD7B1C5218F49B500C23760 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAD7B1CD218F49B500C23760;
+			remoteInfo = Amadeus;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1A52FCF6B1826516C0EF3351 /* Pods-Amadeus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amadeus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Amadeus/Pods-Amadeus.release.xcconfig"; sourceTree = "<group>"; };
@@ -24,6 +36,9 @@
 		EAD7B1DB218F519D00C23760 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		EAD7B1DD218F5ADD00C23760 /* Amadeus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amadeus.swift; sourceTree = "<group>"; };
 		EAD7B1DF218F5B1100C23760 /* AuthAmadeus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAmadeus.swift; sourceTree = "<group>"; };
+		EAD7B21E218F663D00C23760 /* AmadeusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmadeusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD7B220218F663D00C23760 /* AmadeusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmadeusTests.swift; sourceTree = "<group>"; };
+		EAD7B222218F663D00C23760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +47,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				68269131F900673BC83ED62A /* Pods_Amadeus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD7B21B218F663D00C23760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD7B223218F663D00C23760 /* Amadeus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD7B1D0218F49B500C23760 /* Source */,
+				EAD7B21F218F663D00C23760 /* AmadeusTests */,
 				EAD7B1CF218F49B500C23760 /* Products */,
 				33C6056D6D659BA24FBBED70 /* Pods */,
 				2D813C517482ED6500498BE6 /* Frameworks */,
@@ -69,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD7B1CE218F49B500C23760 /* Amadeus.framework */,
+				EAD7B21E218F663D00C23760 /* AmadeusTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +108,15 @@
 				EAD7B1DF218F5B1100C23760 /* AuthAmadeus.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		EAD7B21F218F663D00C23760 /* AmadeusTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAD7B220218F663D00C23760 /* AmadeusTests.swift */,
+				EAD7B222218F663D00C23760 /* Info.plist */,
+			);
+			path = AmadeusTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,18 +152,40 @@
 			productReference = EAD7B1CE218F49B500C23760 /* Amadeus.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		EAD7B21D218F663D00C23760 /* AmadeusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD7B228218F663D00C23760 /* Build configuration list for PBXNativeTarget "AmadeusTests" */;
+			buildPhases = (
+				EAD7B21A218F663D00C23760 /* Sources */,
+				EAD7B21B218F663D00C23760 /* Frameworks */,
+				EAD7B21C218F663D00C23760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAD7B225218F663D00C23760 /* PBXTargetDependency */,
+			);
+			name = AmadeusTests;
+			productName = AmadeusTests;
+			productReference = EAD7B21E218F663D00C23760 /* AmadeusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		EAD7B1C5218F49B500C23760 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = amadeus4dev;
 				TargetAttributes = {
 					EAD7B1CD218F49B500C23760 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+					};
+					EAD7B21D218F663D00C23760 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -146,12 +202,20 @@
 			projectRoot = "";
 			targets = (
 				EAD7B1CD218F49B500C23760 /* Amadeus */,
+				EAD7B21D218F663D00C23760 /* AmadeusTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EAD7B1CC218F49B500C23760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD7B21C218F663D00C23760 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,7 +256,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAD7B21A218F663D00C23760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD7B221218F663D00C23760 /* AmadeusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAD7B225218F663D00C23760 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAD7B1CD218F49B500C23760 /* Amadeus */;
+			targetProxy = EAD7B224218F663D00C23760 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		EAD7B1D4218F49B500C23760 /* Debug */ = {
@@ -331,7 +411,11 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = amadeus4dev.Amadeus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -355,10 +439,52 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = amadeus4dev.Amadeus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAD7B226218F663D00C23760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45V7X75U5D;
+				INFOPLIST_FILE = AmadeusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amadeus4dev.AmadeusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EAD7B227218F663D00C23760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45V7X75U5D;
+				INFOPLIST_FILE = AmadeusTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amadeus4dev.AmadeusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -381,6 +507,15 @@
 			buildConfigurations = (
 				EAD7B1D7218F49B500C23760 /* Debug */,
 				EAD7B1D8218F49B500C23760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAD7B228218F663D00C23760 /* Build configuration list for PBXNativeTarget "AmadeusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD7B226218F663D00C23760 /* Debug */,
+				EAD7B227218F663D00C23760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
