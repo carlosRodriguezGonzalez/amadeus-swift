@@ -7,6 +7,6 @@ Pod::Spec.new do |s|
   s.authors            = { "Carlos Rodriguez Gonzalez" => "carlosrg1997@hotmail.com" }
   s.social_media_url   = "https://twitter.com/AmadeusITGroup"
   s.platform     = :ios, "10.0"
-  s.source       = { :git => "https://github.com/carlosRodriguezGonzalez/amadeus-swift.git", :tag => "#{s.version}" }
-  s.source_files  = "Source/*.swift"
+  s.source       = { :git => "https://github.com/carlosRodriguezGonzalez/amadeus-swift.git", :tag => s.version }
+  s.source_files = 'Source/*.swift'
 end
