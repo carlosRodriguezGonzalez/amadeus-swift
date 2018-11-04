@@ -8,4 +8,9 @@ target 'Amadeus' do
   # Pods for Amadeus
   pod 'SwiftyJSON'
 
+  target 'AmadeusTests' do
+      inherit! :search_paths
+      pod 'SwiftyJSON'
+  end
 end
+
