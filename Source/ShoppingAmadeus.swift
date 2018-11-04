@@ -10,19 +10,12 @@ import Foundation
 
 public class ShoppingAmadeus {
     
-    fileprivate let flightOffers = "v1/shopping/flight-offers"
-    
-    var auth: AuthAmadeus
+    var flightOffers:FlightOffers
     
     public init(auth: AuthAmadeus) {
-        self.auth = auth
+        flightOffers = FlightOffers(auth: auth)
     }
     
-    public func getFlightOffers(){
-        auth.getAuthToken(onCompletion: {
-            (auth) in
-            print("auth:", auth)
-        })
-    }
+    
     
 }

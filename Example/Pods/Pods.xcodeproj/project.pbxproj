@@ -7,93 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19BE18F222382E155E267CAEC4ABEB07 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BACB52C1D99DC346D1FE8DA2E6E995 /* HTTPRequest.swift */; };
-		1F1875A23F2193BD64BA8270E224EE2E /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59E5F4CA8C548EED660D091833C235A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E8B98BB862EFECF5F41ACECA0555BB /* Foundation.framework */; };
+		16D81B7BFBC23598302FD6CBA880E048 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05A2DDA9058082E37FAAA448F008219 /* SwiftyJSON.framework */; };
+		20DE1C6429D91F725F33F6D82664E515 /* Amadeus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 90C4D451FE61107EF0D73DA8A76C9540 /* Amadeus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		274626511A89E8F5BB61EA12B3A5EA45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E8B98BB862EFECF5F41ACECA0555BB /* Foundation.framework */; };
+		2B00660B80F233532097174C5B4B2DCB /* Amadeus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D405C0DFF07EB69946831EACB6A4501 /* Amadeus-dummy.m */; };
+		57B1AC38D13EB128EDC1640E8199C008 /* Amadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E69595A39C5D0103DE930F34073F437 /* Amadeus.swift */; };
+		5ED195D1FF7042A1B3B042BCBC25DA9F /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */; };
+		5F50CD84B87BE2C9B269C836955C3E3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E8B98BB862EFECF5F41ACECA0555BB /* Foundation.framework */; };
 		6B21DE83577EC40E3DB59D23B7B7BA20 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D3FE98E9F2D34863BD3F3597A0485A /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B244DD4304344CD9B6409D189DC7103 /* Amadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5695139D1F5D7CF00FDDDC37014FCB9F /* Amadeus.swift */; };
-		7C326CF3296B3B8147640CECF25E5694 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
 		8C6DAC11441B8C3EDD53CC35552DE3D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E8B98BB862EFECF5F41ACECA0555BB /* Foundation.framework */; };
-		9345577D30B2190F48DD56B5C827497E /* AuthAmadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5EAEE5A91E0A7A64863D00F7BCBB70F /* AuthAmadeus.swift */; };
-		A30D663B6D64A596E9212BB030D1B38D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E8B98BB862EFECF5F41ACECA0555BB /* Foundation.framework */; };
-		ABCD6D1E5AFA835BE1916040C74518D0 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */; };
-		B4C7F5E2A97CB38CDB81E40B3586163A /* Amadeus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3000C56EE797C15892FE42669F80ADE9 /* Amadeus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C81B75332BD725ACADA8C972ADC307F7 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05A2DDA9058082E37FAAA448F008219 /* SwiftyJSON.framework */; };
-		CD7BB01AA084A4D16E7C060BE2A33618 /* ShoppingAmadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05076171721C5F6E091E25886BF36FD7 /* ShoppingAmadeus.swift */; };
-		E78C506CBFF38E74DFC7E939746BF773 /* Amadeus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF552131EF7B6CC0099F5CF8BEAEEE4 /* Amadeus-dummy.m */; };
+		A54A37DD202C72408A1A6E268A8760AD /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
+		D1EBF7CC780DF56C1443E824D6E0AA4B /* ShoppingAmadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30936E392FCAB42DF1DC7CA8D2C018E8 /* ShoppingAmadeus.swift */; };
+		DE7E4F589509B9D4F480620282615415 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC7A8742A8CF2A4857A3A6A6E83A9F06 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD65E35A3233FBE6F2EFDEB3D43D114 /* Pods-Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		6AB9BCBD33FF6D179B047546ACC16058 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F05AC96D5E0DF8F10CDEE1859C7AA1DC;
+			remoteInfo = SwiftyJSON;
+		};
 		7EA3FBFB7760128B5B105311693D48C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E351BAAA90CB6A38B085BF5F41113EEC;
+			remoteGlobalIDString = F05AC96D5E0DF8F10CDEE1859C7AA1DC;
 			remoteInfo = SwiftyJSON;
 		};
 		9E329844F0500883FB372AB5C398FBC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F40F782C34E4E4BBDCC457E3850F0ED4;
+			remoteGlobalIDString = E4152104F545975894DADB5A31A09188;
 			remoteInfo = Amadeus;
-		};
-		D499591B6E402A8F2D69A5B2DA900394 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E351BAAA90CB6A38B085BF5F41113EEC;
-			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01D4137EC241B566210690407FB2F3F2 /* Amadeus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Amadeus.modulemap; sourceTree = "<group>"; };
 		044AA3E23F71470C9B5F50D44720EA0D /* Pods-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-resources.sh"; sourceTree = "<group>"; };
-		05076171721C5F6E091E25886BF36FD7 /* ShoppingAmadeus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShoppingAmadeus.swift; path = Source/ShoppingAmadeus.swift; sourceTree = "<group>"; };
-		0E1BC19B8C9176D3D7ED309A4763081D /* Amadeus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amadeus-prefix.pch"; sourceTree = "<group>"; };
-		0E3CA32326FD694A8752F93B0DA34E06 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D8607A2E5CB869196ECA4C47E16E11D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		11434BC759D12F57876FBB74A4775E74 /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		15D3FE98E9F2D34863BD3F3597A0485A /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
 		1AD65E35A3233FBE6F2EFDEB3D43D114 /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
 		25A37D4D536CC5988A439441117C41F4 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
-		3000C56EE797C15892FE42669F80ADE9 /* Amadeus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amadeus-umbrella.h"; sourceTree = "<group>"; };
-		30BACB52C1D99DC346D1FE8DA2E6E995 /* HTTPRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPRequest.swift; path = Source/HTTPRequest.swift; sourceTree = "<group>"; };
+		30936E392FCAB42DF1DC7CA8D2C018E8 /* ShoppingAmadeus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShoppingAmadeus.swift; path = Source/ShoppingAmadeus.swift; sourceTree = "<group>"; };
+		316A1306033CBF3F79FB4C5EEDC1544D /* Amadeus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amadeus-prefix.pch"; sourceTree = "<group>"; };
 		3ADE9E5655579DB0F79DC9C80758673C /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3BF65A413D7A9D2F4ACC7F9C950DCDE9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3F3EFEBDE6702DEFDFFF9D5C6DBC3773 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
-		4AA5A73CAC413A205C7B5F1337E76266 /* Amadeus.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Amadeus.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4086B7F88911274A6DCBA3AAD270B99F /* Amadeus.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Amadeus.xcconfig; sourceTree = "<group>"; };
 		519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		55D947A7BC9D140821FA07655BB6A450 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5695139D1F5D7CF00FDDDC37014FCB9F /* Amadeus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Amadeus.swift; path = Source/Amadeus.swift; sourceTree = "<group>"; };
 		5B81C04F8E84EAE60AE15C8695031A5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5DF552131EF7B6CC0099F5CF8BEAEEE4 /* Amadeus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Amadeus-dummy.m"; sourceTree = "<group>"; };
-		6E6D4FAC9BDC010615D406F9BCE02F21 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		7CB762D393BB9A4E6E4EAD59B36BF0A5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		5D405C0DFF07EB69946831EACB6A4501 /* Amadeus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Amadeus-dummy.m"; sourceTree = "<group>"; };
+		5E151A4B9B8A5AF818E589927D32EDBB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E69595A39C5D0103DE930F34073F437 /* Amadeus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Amadeus.swift; path = Source/Amadeus.swift; sourceTree = "<group>"; };
 		83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		90C4D451FE61107EF0D73DA8A76C9540 /* Amadeus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amadeus-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F2BAFC7CACB8DA762039FEAD169DBC4 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example.framework; path = "Pods-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E8B98BB862EFECF5F41ACECA0555BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A79AC23D5A157FED70D9C53D844B2319 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		A79F7D02E059EE730AF14B4A4F87ED52 /* Amadeus.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Amadeus.xcconfig; sourceTree = "<group>"; };
-		B5EAEE5A91E0A7A64863D00F7BCBB70F /* AuthAmadeus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthAmadeus.swift; path = Source/AuthAmadeus.swift; sourceTree = "<group>"; };
 		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		C2A816CAF822709CECD6F6B4677B3DDA /* Amadeus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Amadeus.modulemap; sourceTree = "<group>"; };
 		D21EF79A0DE4EDFC757EE852FE857C73 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		E45022699EDA438A046AD43BC3926B01 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		ECEA92E182BA77F227E4165B4260E0FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFC5B2E05B58CD826FD55659BF1D7E39 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F05A2DDA9058082E37FAAA448F008219 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C7A85E86EC189329CEC8024104C3C4 /* Amadeus.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Amadeus.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F3ABD9CF031038F831DB26F99A445D4D /* Amadeus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Amadeus.framework; path = Amadeus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		436A1EFCE0DEAFBAFB8AD55195388BE1 /* Frameworks */ = {
+		467320E1687109336414F24F0765CBB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30D663B6D64A596E9212BB030D1B38D /* Foundation.framework in Frameworks */,
-				C81B75332BD725ACADA8C972ADC307F7 /* SwiftyJSON.framework in Frameworks */,
+				274626511A89E8F5BB61EA12B3A5EA45 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D1C8F4D6CD8D19CD1CC84E7A9F79A19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F50CD84B87BE2C9B269C836955C3E3A /* Foundation.framework in Frameworks */,
+				16D81B7BFBC23598302FD6CBA880E048 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,17 +109,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A098DC998E99BDF39E2C7C1789649D85 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				59E5F4CA8C548EED660D091833C235A2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E3E1FE8C9BB638B5E52AB1BFAF3FABB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFE79F0A2E3F61D663A78956324340CB /* Amadeus */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		1B5ECB992A56AE0C70DC72D88BB90B05 /* Pods-Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,14 +136,6 @@
 			);
 			name = "Pods-Example";
 			path = "Target Support Files/Pods-Example";
-			sourceTree = "<group>";
-		};
-		3FB33444EC009D71DDD4B1BA4B23C39B /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BF0FDD04D6F2A4822D910B6AC1FBC738 /* Amadeus */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		62F6747E3F897D5C62EC5CD01293FE27 /* Products */ = {
@@ -169,6 +165,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		6EA9DAFB82191C87ABF84D6875C77408 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01D4137EC241B566210690407FB2F3F2 /* Amadeus.modulemap */,
+				4086B7F88911274A6DCBA3AAD270B99F /* Amadeus.xcconfig */,
+				5D405C0DFF07EB69946831EACB6A4501 /* Amadeus-dummy.m */,
+				316A1306033CBF3F79FB4C5EEDC1544D /* Amadeus-prefix.pch */,
+				90C4D451FE61107EF0D73DA8A76C9540 /* Amadeus-umbrella.h */,
+				5E151A4B9B8A5AF818E589927D32EDBB /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Amadeus";
+			sourceTree = "<group>";
+		};
 		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,26 +193,12 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				3FB33444EC009D71DDD4B1BA4B23C39B /* Development Pods */,
+				0E3E1FE8C9BB638B5E52AB1BFAF3FABB /* Development Pods */,
 				65B35BF8E63AD31F1FDAD1F7E7313A21 /* Frameworks */,
 				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
 				62F6747E3F897D5C62EC5CD01293FE27 /* Products */,
 				6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		9AEB26D876E6BDF02311E9D2C208D512 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C2A816CAF822709CECD6F6B4677B3DDA /* Amadeus.modulemap */,
-				A79F7D02E059EE730AF14B4A4F87ED52 /* Amadeus.xcconfig */,
-				5DF552131EF7B6CC0099F5CF8BEAEEE4 /* Amadeus-dummy.m */,
-				0E1BC19B8C9176D3D7ED309A4763081D /* Amadeus-prefix.pch */,
-				3000C56EE797C15892FE42669F80ADE9 /* Amadeus-umbrella.h */,
-				0E3CA32326FD694A8752F93B0DA34E06 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/Amadeus";
 			sourceTree = "<group>";
 		};
 		A82FB0ABA1BB1D08F4FA0D68E7D324CB /* Support Files */ = {
@@ -227,30 +223,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		BF0FDD04D6F2A4822D910B6AC1FBC738 /* Amadeus */ = {
-			isa = PBXGroup;
-			children = (
-				5695139D1F5D7CF00FDDDC37014FCB9F /* Amadeus.swift */,
-				B5EAEE5A91E0A7A64863D00F7BCBB70F /* AuthAmadeus.swift */,
-				30BACB52C1D99DC346D1FE8DA2E6E995 /* HTTPRequest.swift */,
-				05076171721C5F6E091E25886BF36FD7 /* ShoppingAmadeus.swift */,
-				BFAAACEF5395A04FAEF07147F09D54F6 /* Pod */,
-				9AEB26D876E6BDF02311E9D2C208D512 /* Support Files */,
-			);
-			name = Amadeus;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		BFAAACEF5395A04FAEF07147F09D54F6 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				4AA5A73CAC413A205C7B5F1337E76266 /* Amadeus.podspec */,
-				6E6D4FAC9BDC010615D406F9BCE02F21 /* LICENSE */,
-				7CB762D393BB9A4E6E4EAD59B36BF0A5 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		D6D29D12F21851571AC40C4783126110 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,9 +231,39 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		E04E946C1506C10A8650CEBF23A58CB4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F1C7A85E86EC189329CEC8024104C3C4 /* Amadeus.podspec */,
+				3BF65A413D7A9D2F4ACC7F9C950DCDE9 /* LICENSE */,
+				0D8607A2E5CB869196ECA4C47E16E11D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		FFE79F0A2E3F61D663A78956324340CB /* Amadeus */ = {
+			isa = PBXGroup;
+			children = (
+				6E69595A39C5D0103DE930F34073F437 /* Amadeus.swift */,
+				30936E392FCAB42DF1DC7CA8D2C018E8 /* ShoppingAmadeus.swift */,
+				E04E946C1506C10A8650CEBF23A58CB4 /* Pod */,
+				6EA9DAFB82191C87ABF84D6875C77408 /* Support Files */,
+			);
+			name = Amadeus;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2C753A5F0EAA6C88529C248CA0792B65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20DE1C6429D91F725F33F6D82664E515 /* Amadeus-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		575E5BE1645ACDD0AD15924D19667D0B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,19 +272,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		72082C85359B4732784CC39BDE23FB7A /* Headers */ = {
+		F8B6EED8C93A7CFEFB494CFD2515071D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F1875A23F2193BD64BA8270E224EE2E /* SwiftyJSON-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78C0561601745C83C666B13E02A59166 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B4C7F5E2A97CB38CDB81E40B3586163A /* Amadeus-umbrella.h in Headers */,
+				DE7E4F589509B9D4F480620282615415 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,13 +302,31 @@
 			productReference = 9F2BAFC7CACB8DA762039FEAD169DBC4 /* Pods_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E351BAAA90CB6A38B085BF5F41113EEC /* SwiftyJSON */ = {
+		E4152104F545975894DADB5A31A09188 /* Amadeus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A10ADDDECC494E2F3644B192EDB9A47 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = B5853E3186006233974CCF1CC543D45F /* Build configuration list for PBXNativeTarget "Amadeus" */;
 			buildPhases = (
-				4BA623C6F85E9E1F2680B66541F2CFAB /* Sources */,
-				A098DC998E99BDF39E2C7C1789649D85 /* Frameworks */,
-				72082C85359B4732784CC39BDE23FB7A /* Headers */,
+				255EAC797C4A91A6169A06C0A4D5285F /* Sources */,
+				5D1C8F4D6CD8D19CD1CC84E7A9F79A19 /* Frameworks */,
+				2C753A5F0EAA6C88529C248CA0792B65 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				675FBBBEDB651A9D50106709E258285C /* PBXTargetDependency */,
+			);
+			name = Amadeus;
+			productName = Amadeus;
+			productReference = F3ABD9CF031038F831DB26F99A445D4D /* Amadeus.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F05AC96D5E0DF8F10CDEE1859C7AA1DC /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7914F784FCE8632CF8ABBB54E8611C01 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				9058C3F3180366F22DAF6EAE545E58CE /* Sources */,
+				467320E1687109336414F24F0765CBB5 /* Frameworks */,
+				F8B6EED8C93A7CFEFB494CFD2515071D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -323,24 +335,6 @@
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
 			productReference = 55D947A7BC9D140821FA07655BB6A450 /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F40F782C34E4E4BBDCC457E3850F0ED4 /* Amadeus */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6D94FFEE6B822B62C1E785F2343F12C5 /* Build configuration list for PBXNativeTarget "Amadeus" */;
-			buildPhases = (
-				F3432A0E4FDF667541C1CE575734F8A9 /* Sources */,
-				436A1EFCE0DEAFBAFB8AD55195388BE1 /* Frameworks */,
-				78C0561601745C83C666B13E02A59166 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				74E0E65174B7B04AF39CFB73F075DAA6 /* PBXTargetDependency */,
-			);
-			name = Amadeus;
-			productName = Amadeus;
-			productReference = F3ABD9CF031038F831DB26F99A445D4D /* Amadeus.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -364,20 +358,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F40F782C34E4E4BBDCC457E3850F0ED4 /* Amadeus */,
+				E4152104F545975894DADB5A31A09188 /* Amadeus */,
 				0EABA7CF542F850EFB89ED671E343C7A /* Pods-Example */,
-				E351BAAA90CB6A38B085BF5F41113EEC /* SwiftyJSON */,
+				F05AC96D5E0DF8F10CDEE1859C7AA1DC /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4BA623C6F85E9E1F2680B66541F2CFAB /* Sources */ = {
+		255EAC797C4A91A6169A06C0A4D5285F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABCD6D1E5AFA835BE1916040C74518D0 /* SwiftyJSON-dummy.m in Sources */,
-				7C326CF3296B3B8147640CECF25E5694 /* SwiftyJSON.swift in Sources */,
+				2B00660B80F233532097174C5B4B2DCB /* Amadeus-dummy.m in Sources */,
+				57B1AC38D13EB128EDC1640E8199C008 /* Amadeus.swift in Sources */,
+				D1EBF7CC780DF56C1443E824D6E0AA4B /* ShoppingAmadeus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,15 +384,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3432A0E4FDF667541C1CE575734F8A9 /* Sources */ = {
+		9058C3F3180366F22DAF6EAE545E58CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E78C506CBFF38E74DFC7E939746BF773 /* Amadeus-dummy.m in Sources */,
-				6B244DD4304344CD9B6409D189DC7103 /* Amadeus.swift in Sources */,
-				9345577D30B2190F48DD56B5C827497E /* AuthAmadeus.swift in Sources */,
-				19BE18F222382E155E267CAEC4ABEB07 /* HTTPRequest.swift in Sources */,
-				CD7BB01AA084A4D16E7C060BE2A33618 /* ShoppingAmadeus.swift in Sources */,
+				5ED195D1FF7042A1B3B042BCBC25DA9F /* SwiftyJSON-dummy.m in Sources */,
+				A54A37DD202C72408A1A6E268A8760AD /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,19 +399,19 @@
 		30CC6069014D0AD7BE5FE53A832CD3B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = E351BAAA90CB6A38B085BF5F41113EEC /* SwiftyJSON */;
+			target = F05AC96D5E0DF8F10CDEE1859C7AA1DC /* SwiftyJSON */;
 			targetProxy = 7EA3FBFB7760128B5B105311693D48C9 /* PBXContainerItemProxy */;
 		};
-		74E0E65174B7B04AF39CFB73F075DAA6 /* PBXTargetDependency */ = {
+		675FBBBEDB651A9D50106709E258285C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = E351BAAA90CB6A38B085BF5F41113EEC /* SwiftyJSON */;
-			targetProxy = D499591B6E402A8F2D69A5B2DA900394 /* PBXContainerItemProxy */;
+			target = F05AC96D5E0DF8F10CDEE1859C7AA1DC /* SwiftyJSON */;
+			targetProxy = 6AB9BCBD33FF6D179B047546ACC16058 /* PBXContainerItemProxy */;
 		};
 		8146ADAB711349CD36944B8769D1FDB3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Amadeus;
-			target = F40F782C34E4E4BBDCC457E3850F0ED4 /* Amadeus */;
+			target = E4152104F545975894DADB5A31A09188 /* Amadeus */;
 			targetProxy = 9E329844F0500883FB372AB5C398FBC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -519,9 +511,9 @@
 			};
 			name = Release;
 		};
-		4E1E1F8E026BD79A0D4B2085D697DAEE /* Release */ = {
+		5D9CF65EA0B9B9DFE959A0DB71A4753B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A79F7D02E059EE730AF14B4A4F87ED52 /* Amadeus.xcconfig */;
+			baseConfigurationReference = 4086B7F88911274A6DCBA3AAD270B99F /* Amadeus.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -544,14 +536,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		5DA1707F56BBB31B232FEC676F872471 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -588,104 +579,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		66C57044232714B2257D545ECFEAB698 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A79F7D02E059EE730AF14B4A4F87ED52 /* Amadeus.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Amadeus/Amadeus-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Amadeus/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Amadeus/Amadeus.modulemap";
-				PRODUCT_MODULE_NAME = Amadeus;
-				PRODUCT_NAME = Amadeus;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		76D7A1B08FB6765148EDDE2E47C2A58F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		81B649235BF12FA6A65FB5A6EDBD0438 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				PRODUCT_MODULE_NAME = SwiftyJSON;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		87EAC867385563488A6D8F1E74AC46B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -750,6 +643,105 @@
 			};
 			name = Debug;
 		};
+		DED87CFCD82D23C2964E45D0AA2F10FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DF2D5C940AF624B6D8463D86D29DD951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4086B7F88911274A6DCBA3AAD270B99F /* Amadeus.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Amadeus/Amadeus-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Amadeus/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Amadeus/Amadeus.modulemap";
+				PRODUCT_MODULE_NAME = Amadeus;
+				PRODUCT_NAME = Amadeus;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2BC1224BEC22137CF4B91DFBF8B32A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -758,15 +750,6 @@
 			buildConfigurations = (
 				87EAC867385563488A6D8F1E74AC46B4 /* Debug */,
 				063198AB09B9CDB3A695432FC17AD8CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6D94FFEE6B822B62C1E785F2343F12C5 /* Build configuration list for PBXNativeTarget "Amadeus" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				66C57044232714B2257D545ECFEAB698 /* Debug */,
-				4E1E1F8E026BD79A0D4B2085D697DAEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -780,11 +763,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A10ADDDECC494E2F3644B192EDB9A47 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		7914F784FCE8632CF8ABBB54E8611C01 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76D7A1B08FB6765148EDDE2E47C2A58F /* Debug */,
-				81B649235BF12FA6A65FB5A6EDBD0438 /* Release */,
+				DED87CFCD82D23C2964E45D0AA2F10FF /* Debug */,
+				E2BC1224BEC22137CF4B91DFBF8B32A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5853E3186006233974CCF1CC543D45F /* Build configuration list for PBXNativeTarget "Amadeus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9CF65EA0B9B9DFE959A0DB71A4753B /* Debug */,
+				DF2D5C940AF624B6D8463D86D29DD951 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

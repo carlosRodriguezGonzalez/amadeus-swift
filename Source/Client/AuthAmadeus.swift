@@ -24,7 +24,10 @@ public class AuthAmadeus {
         let body = "grant_type=" + grant_type + "&client_id=" + client_id + "&client_secret=" + client_secret
         makeHTTPPostRequest(urlAuth, body: body, onCompletion: { (data, err) in
             print("data:", data)
+            
+            
             if let error = err{
+                
                 print(error)
             }
             
@@ -34,7 +37,7 @@ public class AuthAmadeus {
     func getAuthToken(onCompletion: @escaping (String) -> Void){
         let body = "grant_type=" + grant_type + "&client_id=" + client_id + "&client_secret=" + client_secret
         makeHTTPPostRequest(urlAuth, body: body, onCompletion: { (data, err) in
-            
+            print("auth:", data)
             if let auth = data["access_token"].string{
                 onCompletion(auth)
             }else{
