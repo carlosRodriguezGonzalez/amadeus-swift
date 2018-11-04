@@ -6,7 +6,10 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.authors            = { "Carlos Rodriguez Gonzalez" => "carlosrg1997@hotmail.com" }
   s.social_media_url   = "https://twitter.com/AmadeusITGroup"
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios
+  s.ios.deployment_target = '10.0'
+  s.swift_version = "4.2"
+
   s.source       = { :git => "https://github.com/carlosRodriguezGonzalez/amadeus-swift.git", :tag => s.version }
 
   s.source_files = 'Source', 'Source/**/*', 'Source/*.swift'
