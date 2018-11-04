@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EAD7B1D3218F49B500C23760 /* Amadeus.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD7B1D1218F49B500C23760 /* Amadeus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAD7B1DC218F519D00C23760 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DB218F519D00C23760 /* HTTPRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EAD7B1CE218F49B500C23760 /* Amadeus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amadeus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD7B1D1218F49B500C23760 /* Amadeus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Amadeus.h; sourceTree = "<group>"; };
 		EAD7B1D2218F49B500C23760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD7B1DB218F519D00C23760 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				EAD7B1D1218F49B500C23760 /* Amadeus.h */,
 				EAD7B1D2218F49B500C23760 /* Info.plist */,
+				EAD7B1DB218F519D00C23760 /* HTTPRequest.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					EAD7B1CD218F49B500C23760 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD7B1DC218F519D00C23760 /* HTTPRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		EAD7B1D7218F49B500C23760 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = amadeus4dev.Amadeus;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		EAD7B1D8218F49B500C23760 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
