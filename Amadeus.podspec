@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/carlosRodriguezGonzalez/amadeus-swift.git", :tag => s.version }
 
-  s.source_files = 'Source/*.swift'
+  s.source_files = 'Source/*.swift', 'Source/**/*.swift'
   s.dependency "SwiftyJSON"
 end

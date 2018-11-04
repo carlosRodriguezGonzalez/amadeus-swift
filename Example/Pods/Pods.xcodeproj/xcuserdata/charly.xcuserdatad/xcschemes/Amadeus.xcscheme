@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4152104F545975894DADB5A31A09188"
+               BlueprintIdentifier = "DA57638521739F58DC98DEC48BFF1C5A"
                BlueprintName = "Amadeus"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Amadeus.framework">

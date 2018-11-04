@@ -14,7 +14,7 @@ public class FlightOffers{
     
     private var auth: AuthAmadeus
     
-    init(auth:AuthAmadeus) {
+    public init(auth:AuthAmadeus) {
         self.auth = auth
     }
     

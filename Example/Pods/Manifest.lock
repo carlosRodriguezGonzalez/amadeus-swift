@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../../Amadeus"
 
 SPEC CHECKSUMS:
-  Amadeus: 3d94aa585f0e34989071fd7746ca5d2b7c24a6fa
+  Amadeus: 7a2944b020c6dc6029dbd062cc318689ab2f8941
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
 PODFILE CHECKSUM: df84ab9344ccbbe40df19df8afc3156b903f847b
