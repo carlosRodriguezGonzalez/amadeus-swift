@@ -24,7 +24,7 @@ public class AuthAmadeus {
         let body = "grant_type=" + grant_type + "&client_id=" + client_id + "&client_secret=" + client_secret
         makeHTTPPostRequest(urlAuth, body: body, onCompletion: { (data, err) in
             print("data:", data)
-            print("err:", err)
+            print("err:", err!)
         })
     }
     

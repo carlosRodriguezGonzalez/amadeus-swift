@@ -13,7 +13,18 @@
 		EAD7B1F3218F5EF300C23760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD7B1F1218F5EF300C23760 /* Main.storyboard */; };
 		EAD7B1F5218F5EF400C23760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD7B1F4218F5EF400C23760 /* Assets.xcassets */; };
 		EAD7B1F8218F5EF400C23760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD7B1F6218F5EF400C23760 /* LaunchScreen.storyboard */; };
+		EAD7B213218F64F600C23760 /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B212218F64F600C23760 /* ExampleTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAD7B215218F64F600C23760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD7B1E2218F5EF300C23760 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAD7B1E9218F5EF300C23760;
+			remoteInfo = Example;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		32B67311082B08BD705A74D1 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -26,6 +37,9 @@
 		EAD7B1F4218F5EF400C23760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAD7B1F7218F5EF400C23760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAD7B1F9218F5EF400C23760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD7B210218F64F500C23760 /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD7B212218F64F600C23760 /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
+		EAD7B214218F64F600C23760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +48,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9157656E406C47A305EAA236 /* Pods_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD7B20D218F64F500C23760 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD7B1EC218F5EF300C23760 /* Example */,
+				EAD7B211218F64F600C23760 /* ExampleTests */,
 				EAD7B1EB218F5EF300C23760 /* Products */,
 				AE5AE180DAB10ECAFD4350F4 /* Pods */,
 				2A5504E68F8A5251799E80E1 /* Frameworks */,
@@ -71,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD7B1EA218F5EF300C23760 /* Example.app */,
+				EAD7B210218F64F500C23760 /* ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +109,15 @@
 				EAD7B1F9218F5EF400C23760 /* Info.plist */,
 			);
 			path = Example;
+			sourceTree = "<group>";
+		};
+		EAD7B211218F64F600C23760 /* ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				EAD7B212218F64F600C23760 /* ExampleTests.swift */,
+				EAD7B214218F64F600C23760 /* Info.plist */,
+			);
+			path = ExampleTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +142,24 @@
 			productReference = EAD7B1EA218F5EF300C23760 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EAD7B20F218F64F500C23760 /* ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD7B219218F64F600C23760 /* Build configuration list for PBXNativeTarget "ExampleTests" */;
+			buildPhases = (
+				EAD7B20C218F64F500C23760 /* Sources */,
+				EAD7B20D218F64F500C23760 /* Frameworks */,
+				EAD7B20E218F64F500C23760 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAD7B216218F64F600C23760 /* PBXTargetDependency */,
+			);
+			name = ExampleTests;
+			productName = ExampleTests;
+			productReference = EAD7B210218F64F500C23760 /* ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -122,6 +172,10 @@
 				TargetAttributes = {
 					EAD7B1E9218F5EF300C23760 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					EAD7B20F218F64F500C23760 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EAD7B1E9218F5EF300C23760;
 					};
 				};
 			};
@@ -139,6 +193,7 @@
 			projectRoot = "";
 			targets = (
 				EAD7B1E9218F5EF300C23760 /* Example */,
+				EAD7B20F218F64F500C23760 /* ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +206,13 @@
 				EAD7B1F8218F5EF400C23760 /* LaunchScreen.storyboard in Resources */,
 				EAD7B1F5218F5EF400C23760 /* Assets.xcassets in Resources */,
 				EAD7B1F3218F5EF300C23760 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD7B20E218F64F500C23760 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +269,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAD7B20C218F64F500C23760 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD7B213218F64F600C23760 /* ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAD7B216218F64F600C23760 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAD7B1E9218F5EF300C23760 /* Example */;
+			targetProxy = EAD7B215218F64F600C23760 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EAD7B1F1218F5EF300C23760 /* Main.storyboard */ = {
@@ -353,7 +431,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45V7X75U5D;
 				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = amadeus4dev.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -369,11 +450,54 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45V7X75U5D;
 				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = amadeus4dev.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EAD7B217218F64F600C23760 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45V7X75U5D;
+				INFOPLIST_FILE = ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amadeus4dev.ExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
+			};
+			name = Debug;
+		};
+		EAD7B218218F64F600C23760 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 45V7X75U5D;
+				INFOPLIST_FILE = ExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = amadeus4dev.ExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Release;
 		};
@@ -394,6 +518,15 @@
 			buildConfigurations = (
 				EAD7B1FD218F5EF400C23760 /* Debug */,
 				EAD7B1FE218F5EF400C23760 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAD7B219218F64F600C23760 /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD7B217218F64F600C23760 /* Debug */,
+				EAD7B218218F64F600C23760 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

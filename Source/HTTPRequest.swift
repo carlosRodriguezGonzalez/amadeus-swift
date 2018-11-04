@@ -42,7 +42,7 @@ public func makeHTTPPostRequest(_ path: String, body: String, onCompletion: @esc
                 let json:JSON = try JSON(data: jsonData)
                 onCompletion(json, nil)
             } else {
-                onCompletion(JSON.null, error as! NSError)
+                onCompletion(JSON.null, error as NSError?)
             }
         }catch let err as NSError{
             print("error:",err)
