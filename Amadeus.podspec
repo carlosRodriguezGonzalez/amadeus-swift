@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "10.0"
   s.source       = { :git => "https://github.com/carlosRodriguezGonzalez/amadeus-swift.git", :tag => s.version }
 
-  s.source_files = 'Amadeus/Source', 'Amadeus/Source/**/*', 'Amadeus/Source/*.swift'
+  s.source_files = 'Source', 'Source/**/*', 'Source/*.swift'
 end
