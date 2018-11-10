@@ -8,12 +8,12 @@
 
 import Foundation
 
-public class ShoppingAmadeus {
+public class Shopping {
     
     var flightOffers:FlightOffers
     
-    public init(auth: AuthAmadeus) {
-        flightOffers = FlightOffers(auth: auth)
+    public init(client: Client) {
+        flightOffers = FlightOffers(client: client)
     }
     
     

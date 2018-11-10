@@ -10,12 +10,12 @@ import Foundation
 
 public class Amadeus {
     
-    public let auth:AuthAmadeus
-    public let shopping:ShoppingAmadeus
+    public let client:Client
+    public let shopping:Shopping
     
     public init(client_id: String, client_secret:String) {
-        auth = AuthAmadeus(client_id: client_id, client_secret: client_secret)
-        shopping = ShoppingAmadeus(auth: auth)
+        client = Client(client_id: client_id, client_secret: client_secret)
+        shopping = Shopping(client: client)
     }
     
     

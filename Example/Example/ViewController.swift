@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
-        let amadeus = Amadeus(client_id: "id", client_secret: "secret")
+        let amadeus = Amadeus(client_id: "123", client_secret: "234")
         
         amadeus.auth.testAuth()
         

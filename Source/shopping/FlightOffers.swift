@@ -12,14 +12,14 @@ fileprivate let flightOffers = "v1/shopping/flight-offers"
 
 public class FlightOffers{
     
-    private var auth: AuthAmadeus
+    private var client: Client
     
-    public init(auth:AuthAmadeus) {
-        self.auth = auth
+    public init(client:Client) {
+        self.client = client
     }
     
     public func getFlightOffers(onCompletion: @escaping (String) -> Void){
-        auth.getAuthToken(onCompletion: {
+        client.getAuthToken(onCompletion: {
             (auth) in
             if auth != "error" {
                 
