@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 fileprivate let flightOffers = "v1/shopping/flight-offers"
 
@@ -18,17 +19,29 @@ public class FlightOffers{
         self.client = client
     }
     
-    public func getFlightOffers(onCompletion: @escaping (String) -> Void){
-        /*client.getAuthToken(onCompletion: {
+    public func get(origin:String, destination:String, departureDate:String, onCompletion: @escaping (JSON) -> Void){
+        client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
+                
+                makeHTTPGetRequestAuth(flightOffers, auth: auth, body: "", onCompletion: {
+                    data,err  in
+                    if let error = err {
+                        onCompletion(JSON(parseJSON: "{error:\(error)}"))
+                    }else{
+                        onCompletion(data)
+                    }
+                    
+                })
                 
             }else{
                 onCompletion("error")
             }
         })
-         */
     }
     
+    private func getFlightOffers(access_token: String){
+        
+    }
     
 }

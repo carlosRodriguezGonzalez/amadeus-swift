@@ -10,7 +10,7 @@ import Foundation
 
 public class Shopping {
     
-    var flightOffers:FlightOffers
+    public let flightOffers:FlightOffers
     
     public init(client: Client) {
         flightOffers = FlightOffers(client: client)

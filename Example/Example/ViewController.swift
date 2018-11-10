@@ -27,6 +27,11 @@ class ViewController: UIViewController {
             print("access:",access_token)
         })
         
+        amadeus.shopping.flightOffers.get(origin: "MAD", destination: "LUX", departureDate: "2018-12-10",onCompletion: {data in
+            
+            print("DATA: ", data)
+        })
+        
         btnClick = UIButton()
         btnClick.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
         btnClick.addTarget(self, action: #selector(press), for: .touchUpInside)
