@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		09E9FDF380437002A73132B181A4B040 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E8B98BB862EFECF5F41ACECA0555BB /* Foundation.framework */; };
-		208E953A53220E7C5E44AE1F521F1339 /* Amadeus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 306D63F4E368CCC012CECF26593429C3 /* Amadeus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CA3310E6079F3A967FDAECCE82DA92E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996B2CC653CB595D8F1B079592414BA5 /* Client.swift */; };
+		208E953A53220E7C5E44AE1F521F1339 /* Amadeus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD05FD1DA97E8467D2C4F43AA367017 /* Amadeus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22F3B9F4577A553AEE9FBB5ECBDBA02B /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */; };
-		3091A55DC09C2F8DD1ECFAF70B114B70 /* FlightOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98C58091A43FBF52DCDA8FE0ABFD09B /* FlightOffers.swift */; };
 		42C6B2C00BF08A4D0EC88ACF9913504B /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FD3B622BF8D7AC1C7334D5D85567AB1 /* AuthAmadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF426630C22BF8D2B19941AD571935 /* AuthAmadeus.swift */; };
 		51C2E3FDDBDA2D5EFF5D7C19C0C17B75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E8B98BB862EFECF5F41ACECA0555BB /* Foundation.framework */; };
+		5D2DBF3118C178ACDC4D5B111073D870 /* Amadeus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E241755F6BAC9C7AA7FEA235268C06F6 /* Amadeus-dummy.m */; };
+		60CD94EE1D3F0FE33C4FC2BB7B9AD0EB /* FlightOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F7B2586967409CB68D332AABB26C5D /* FlightOffers.swift */; };
 		6B21DE83577EC40E3DB59D23B7B7BA20 /* Pods-Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D3FE98E9F2D34863BD3F3597A0485A /* Pods-Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7182B6B10A68A2E9A2937E95CB5A0FF6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05A2DDA9058082E37FAAA448F008219 /* SwiftyJSON.framework */; };
 		8C6DAC11441B8C3EDD53CC35552DE3D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E8B98BB862EFECF5F41ACECA0555BB /* Foundation.framework */; };
-		ACEA7EC06532B835115B9BD3C038A3E8 /* ShoppingAmadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3B5605253630219C1B50F6DB232A28 /* ShoppingAmadeus.swift */; };
+		A6D812B66D9265D2DA489093691212D1 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C7963417ECB94F4C1106EE2674F7C3 /* Shopping.swift */; };
 		BEC4F5478BFC150EBC5077EECB823CEB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
-		CB5F2266D3579A4CAB4756EF81383F8C /* Amadeus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F3F2FF15A8B3F70C76AB070C291EA1 /* Amadeus-dummy.m */; };
-		D206AA82C388377D6F7733A03D66BCEC /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A0350610545918775EC29C3C3C8C67 /* HTTPRequest.swift */; };
-		EC26AAA44C6BB91D721737AAD3D36205 /* Amadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486CB9CFAB3621A63D1620BA7F61DCF4 /* Amadeus.swift */; };
+		DB036541F567269FC02AE7F03A42E156 /* Amadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1F774B6A1D46D0EDDD396D048F767F /* Amadeus.swift */; };
+		FA8E6624782D88941D2CAF116FB19199 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489CE1AD3AADF3766A9CB92FC84E040 /* HTTPRequest.swift */; };
 		FC7A8742A8CF2A4857A3A6A6E83A9F06 /* Pods-Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD65E35A3233FBE6F2EFDEB3D43D114 /* Pods-Example-dummy.m */; };
 /* End PBXBuildFile section */
 
@@ -50,43 +50,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B426B5F581ABAD6C717FDA3047152E /* Amadeus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amadeus-prefix.pch"; sourceTree = "<group>"; };
 		044AA3E23F71470C9B5F50D44720EA0D /* Pods-Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-resources.sh"; sourceTree = "<group>"; };
-		08A0350610545918775EC29C3C3C8C67 /* HTTPRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
-		091DA66A96D0726EF695C858E717EC92 /* Amadeus.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Amadeus.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		0D4A093D002250269D7FDA83A258947C /* Amadeus.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Amadeus.xcconfig; sourceTree = "<group>"; };
 		11434BC759D12F57876FBB74A4775E74 /* Pods-Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		13DC1F681968E9CE8530769C4FA9B783 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		15D3FE98E9F2D34863BD3F3597A0485A /* Pods-Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-umbrella.h"; sourceTree = "<group>"; };
 		1AD65E35A3233FBE6F2EFDEB3D43D114 /* Pods-Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-dummy.m"; sourceTree = "<group>"; };
 		25A37D4D536CC5988A439441117C41F4 /* Pods-Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Example.modulemap"; sourceTree = "<group>"; };
-		306D63F4E368CCC012CECF26593429C3 /* Amadeus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amadeus-umbrella.h"; sourceTree = "<group>"; };
-		35714F00316607C9D5E966C6DF0C2701 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A58CE6563750AFB90521FA9076DD0A8 /* Amadeus-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amadeus-prefix.pch"; sourceTree = "<group>"; };
 		3ADE9E5655579DB0F79DC9C80758673C /* Pods-Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3F3EFEBDE6702DEFDFFF9D5C6DBC3773 /* Pods-Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-frameworks.sh"; sourceTree = "<group>"; };
-		486CB9CFAB3621A63D1620BA7F61DCF4 /* Amadeus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Amadeus.swift; path = Source/Amadeus.swift; sourceTree = "<group>"; };
-		4EFEFB41F528ECDABFA5FAE9053E3CB0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		40C7963417ECB94F4C1106EE2674F7C3 /* Shopping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shopping.swift; path = Source/Shopping.swift; sourceTree = "<group>"; };
+		4E1F774B6A1D46D0EDDD396D048F767F /* Amadeus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Amadeus.swift; path = Source/Amadeus.swift; sourceTree = "<group>"; };
 		519F97488515DDE14F549C4A2F8CC247 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 		55D947A7BC9D140821FA07655BB6A450 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57BFDA7539E88498BC527AF90C7417FC /* Amadeus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Amadeus.modulemap; sourceTree = "<group>"; };
 		5B81C04F8E84EAE60AE15C8695031A5F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81F3F2FF15A8B3F70C76AB070C291EA1 /* Amadeus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Amadeus-dummy.m"; sourceTree = "<group>"; };
+		6E4B5EDD65EC11284B504C592BB94E3F /* Amadeus.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = Amadeus.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		83B82F63FAD4271C84265BEC3F20EEFF /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		89AF426630C22BF8D2B19941AD571935 /* AuthAmadeus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AuthAmadeus.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		996BE631F562B0F13D1CE77AB7AC528E /* Amadeus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Amadeus.modulemap; sourceTree = "<group>"; };
-		9F0498BAA535E36ECF211B0B4391254A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		996B2CC653CB595D8F1B079592414BA5 /* Client.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		9F2BAFC7CACB8DA762039FEAD169DBC4 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example.framework; path = "Pods-Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FB31E0106077FE05E26516114DD20D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E8B98BB862EFECF5F41ACECA0555BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		A79AC23D5A157FED70D9C53D844B2319 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
-		A98C58091A43FBF52DCDA8FE0ABFD09B /* FlightOffers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightOffers.swift; sourceTree = "<group>"; };
+		AC6E1223E81EE044A85BA32138915EC0 /* Amadeus.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Amadeus.xcconfig; sourceTree = "<group>"; };
 		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		CF3B5605253630219C1B50F6DB232A28 /* ShoppingAmadeus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShoppingAmadeus.swift; path = Source/ShoppingAmadeus.swift; sourceTree = "<group>"; };
+		C83CE71B3E9CA22DA953EA3983F8CF8E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		D21EF79A0DE4EDFC757EE852FE857C73 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		D2545A43F22D33A594021F5DC0CEB3AD /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		E241755F6BAC9C7AA7FEA235268C06F6 /* Amadeus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Amadeus-dummy.m"; sourceTree = "<group>"; };
 		E45022699EDA438A046AD43BC3926B01 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		E489CE1AD3AADF3766A9CB92FC84E040 /* HTTPRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		ECEA92E182BA77F227E4165B4260E0FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFC5B2E05B58CD826FD55659BF1D7E39 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F05A2DDA9058082E37FAAA448F008219 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3ABD9CF031038F831DB26F99A445D4D /* Amadeus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Amadeus.framework; path = Amadeus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8F7B2586967409CB68D332AABB26C5D /* FlightOffers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightOffers.swift; sourceTree = "<group>"; };
+		FBD05FD1DA97E8467D2C4F43AA367017 /* Amadeus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Amadeus-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,15 +118,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0FCF1FB9BDE5F23BBE540BCDCD0B7B7F /* shopping */ = {
-			isa = PBXGroup;
-			children = (
-				A98C58091A43FBF52DCDA8FE0ABFD09B /* FlightOffers.swift */,
-			);
-			name = shopping;
-			path = Source/shopping;
-			sourceTree = "<group>";
-		};
 		1B5ECB992A56AE0C70DC72D88BB90B05 /* Pods-Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,18 +136,28 @@
 			path = "Target Support Files/Pods-Example";
 			sourceTree = "<group>";
 		};
-		2CB10F925E36B4E49E43987982F3A4EA /* Support Files */ = {
+		31D241B3E3E043735F49B726706BAAF0 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				996BE631F562B0F13D1CE77AB7AC528E /* Amadeus.modulemap */,
-				0D4A093D002250269D7FDA83A258947C /* Amadeus.xcconfig */,
-				81F3F2FF15A8B3F70C76AB070C291EA1 /* Amadeus-dummy.m */,
-				3A58CE6563750AFB90521FA9076DD0A8 /* Amadeus-prefix.pch */,
-				306D63F4E368CCC012CECF26593429C3 /* Amadeus-umbrella.h */,
-				35714F00316607C9D5E966C6DF0C2701 /* Info.plist */,
+				57BFDA7539E88498BC527AF90C7417FC /* Amadeus.modulemap */,
+				AC6E1223E81EE044A85BA32138915EC0 /* Amadeus.xcconfig */,
+				E241755F6BAC9C7AA7FEA235268C06F6 /* Amadeus-dummy.m */,
+				01B426B5F581ABAD6C717FDA3047152E /* Amadeus-prefix.pch */,
+				FBD05FD1DA97E8467D2C4F43AA367017 /* Amadeus-umbrella.h */,
+				9FB31E0106077FE05E26516114DD20D4 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Amadeus";
+			sourceTree = "<group>";
+		};
+		60B4600B07DF5BD86CA02E63B4B2FBA8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6E4B5EDD65EC11284B504C592BB94E3F /* Amadeus.podspec */,
+				C83CE71B3E9CA22DA953EA3983F8CF8E /* LICENSE */,
+				13DC1F681968E9CE8530769C4FA9B783 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		62F6747E3F897D5C62EC5CD01293FE27 /* Products */ = {
@@ -178,15 +179,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		69BD87FE0BAF316C22B2D9BF102F0DD1 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				08A0350610545918775EC29C3C3C8C67 /* HTTPRequest.swift */,
-			);
-			name = Utils;
-			path = Source/Utils;
-			sourceTree = "<group>";
-		};
 		6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,7 +190,7 @@
 		700033C84A4702A7BCFE5F8D0099732F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7889B5C421EAAC351521037364D2DF08 /* Amadeus */,
+				A0E60EFAF4D0ACC73FA7EE16BB8DEDFE /* Amadeus */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -213,31 +205,6 @@
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		7889B5C421EAAC351521037364D2DF08 /* Amadeus */ = {
-			isa = PBXGroup;
-			children = (
-				486CB9CFAB3621A63D1620BA7F61DCF4 /* Amadeus.swift */,
-				CF3B5605253630219C1B50F6DB232A28 /* ShoppingAmadeus.swift */,
-				ACFAF2946F70AD2283033DBACFC28808 /* Client */,
-				78E97B963AF073E37568F1466CCD38B0 /* Pod */,
-				0FCF1FB9BDE5F23BBE540BCDCD0B7B7F /* shopping */,
-				2CB10F925E36B4E49E43987982F3A4EA /* Support Files */,
-				69BD87FE0BAF316C22B2D9BF102F0DD1 /* Utils */,
-			);
-			name = Amadeus;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		78E97B963AF073E37568F1466CCD38B0 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				091DA66A96D0726EF695C858E717EC92 /* Amadeus.podspec */,
-				4EFEFB41F528ECDABFA5FAE9053E3CB0 /* LICENSE */,
-				9F0498BAA535E36ECF211B0B4391254A /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +215,30 @@
 				62F6747E3F897D5C62EC5CD01293FE27 /* Products */,
 				6A4F6A14E3FB951290E4531728B7A461 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		9EBEB60B37472B0769DA843FA2DE3412 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				996B2CC653CB595D8F1B079592414BA5 /* Client.swift */,
+			);
+			name = Client;
+			path = Source/Client;
+			sourceTree = "<group>";
+		};
+		A0E60EFAF4D0ACC73FA7EE16BB8DEDFE /* Amadeus */ = {
+			isa = PBXGroup;
+			children = (
+				4E1F774B6A1D46D0EDDD396D048F767F /* Amadeus.swift */,
+				40C7963417ECB94F4C1106EE2674F7C3 /* Shopping.swift */,
+				9EBEB60B37472B0769DA843FA2DE3412 /* Client */,
+				60B4600B07DF5BD86CA02E63B4B2FBA8 /* Pod */,
+				D183E4636A017AE8F2176E4C3CDAA728 /* shopping */,
+				31D241B3E3E043735F49B726706BAAF0 /* Support Files */,
+				C3BBA26B6A02C292B366DF4AABB64967 /* Utils */,
+			);
+			name = Amadeus;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		A82FB0ABA1BB1D08F4FA0D68E7D324CB /* Support Files */ = {
@@ -264,21 +255,30 @@
 			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
-		ACFAF2946F70AD2283033DBACFC28808 /* Client */ = {
-			isa = PBXGroup;
-			children = (
-				89AF426630C22BF8D2B19941AD571935 /* AuthAmadeus.swift */,
-			);
-			name = Client;
-			path = Source/Client;
-			sourceTree = "<group>";
-		};
 		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C3BBA26B6A02C292B366DF4AABB64967 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E489CE1AD3AADF3766A9CB92FC84E040 /* HTTPRequest.swift */,
+			);
+			name = Utils;
+			path = Source/Utils;
+			sourceTree = "<group>";
+		};
+		D183E4636A017AE8F2176E4C3CDAA728 /* shopping */ = {
+			isa = PBXGroup;
+			children = (
+				F8F7B2586967409CB68D332AABB26C5D /* FlightOffers.swift */,
+			);
+			name = shopping;
+			path = Source/shopping;
 			sourceTree = "<group>";
 		};
 		D6D29D12F21851571AC40C4783126110 /* iOS */ = {
@@ -359,7 +359,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAAB213C85B079AE4429E8D4B1B8F689 /* Build configuration list for PBXNativeTarget "Amadeus" */;
 			buildPhases = (
-				F8CE4DA5CC86B3EC4499B453CCAF530E /* Sources */,
+				D43E72354D8FE702E278267B9B49BCF6 /* Sources */,
 				DB9116C20394A3D02490EB8E75A842C8 /* Frameworks */,
 				071295758B454F4EEFD681479F330826 /* Headers */,
 			);
@@ -419,16 +419,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8CE4DA5CC86B3EC4499B453CCAF530E /* Sources */ = {
+		D43E72354D8FE702E278267B9B49BCF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5F2266D3579A4CAB4756EF81383F8C /* Amadeus-dummy.m in Sources */,
-				EC26AAA44C6BB91D721737AAD3D36205 /* Amadeus.swift in Sources */,
-				4FD3B622BF8D7AC1C7334D5D85567AB1 /* AuthAmadeus.swift in Sources */,
-				3091A55DC09C2F8DD1ECFAF70B114B70 /* FlightOffers.swift in Sources */,
-				D206AA82C388377D6F7733A03D66BCEC /* HTTPRequest.swift in Sources */,
-				ACEA7EC06532B835115B9BD3C038A3E8 /* ShoppingAmadeus.swift in Sources */,
+				5D2DBF3118C178ACDC4D5B111073D870 /* Amadeus-dummy.m in Sources */,
+				DB036541F567269FC02AE7F03A42E156 /* Amadeus.swift in Sources */,
+				1CA3310E6079F3A967FDAECCE82DA92E /* Client.swift in Sources */,
+				60CD94EE1D3F0FE33C4FC2BB7B9AD0EB /* FlightOffers.swift in Sources */,
+				FA8E6624782D88941D2CAF116FB19199 /* HTTPRequest.swift in Sources */,
+				A6D812B66D9265D2DA489093691212D1 /* Shopping.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,7 +516,7 @@
 		};
 		07CF89DA174CD1423F0118C518081638 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D4A093D002250269D7FDA83A258947C /* Amadeus.xcconfig */;
+			baseConfigurationReference = AC6E1223E81EE044A85BA32138915EC0 /* Amadeus.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -550,7 +550,7 @@
 		};
 		23FA2376C528C70C41AA2FEBD71A4F6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D4A093D002250269D7FDA83A258947C /* Amadeus.xcconfig */;
+			baseConfigurationReference = AC6E1223E81EE044A85BA32138915EC0 /* Amadeus.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";

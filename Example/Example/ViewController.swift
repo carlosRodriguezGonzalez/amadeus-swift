@@ -17,7 +17,12 @@ class ViewController: UIViewController {
     
         let amadeus = Amadeus(client_id: "123", client_secret: "234")
         
-        amadeus.auth.testAuth()
+        //amadeus.auth.testAuth()
+        
+        amadeus.client.getAccessToken(onCompletion: {
+            access_token in
+            print("access:",access_token)
+        })
         
         
     }

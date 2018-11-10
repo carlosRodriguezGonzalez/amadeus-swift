@@ -19,7 +19,7 @@ public class FlightOffers{
     }
     
     public func getFlightOffers(onCompletion: @escaping (String) -> Void){
-        client.getAuthToken(onCompletion: {
+        /*client.getAuthToken(onCompletion: {
             (auth) in
             if auth != "error" {
                 
@@ -27,6 +27,7 @@ public class FlightOffers{
                 onCompletion("error")
             }
         })
+         */
     }
     
     

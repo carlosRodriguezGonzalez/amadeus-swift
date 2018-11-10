@@ -25,10 +25,15 @@ public class Client {
         self.access_token = ""
     }
     
-    func getAccessToken(onCompletion: @escaping (String) -> Void){
+    public func getAccessToken(onCompletion: @escaping (String) -> Void){
         if needRefresh() {
             //needRefresh()
-            onCompletion(access_token)
+            getAuthToken(onCompletion: {
+                access_token in
+                
+                onCompletion(access_token)
+            })
+            
         }else{
             onCompletion(access_token)
         }
@@ -49,12 +54,14 @@ public class Client {
             self.access_token = "error"
         }
         
-        if let expires_time = data[""].int{
-            
+        if let expires_time = data["expires_in"].int{
+            self.expires_time = expires_time + Int(Date().timeIntervalSince1970 * 1000)
+        }else{
+            self.expires_time = 0
         }
     }
     
-    public func getAuthToken(onCompletion: @escaping (String) -> Void){
+    private func getAuthToken(onCompletion: @escaping (String) -> Void){
         let body = "grant_type=" + grant_type + "&client_id=" + client_id + "&client_secret=" + client_secret
         makeHTTPPostRequest(urlAuth, body: body, onCompletion: { (data, err) in
             print("auth:", data)
