@@ -23,17 +23,15 @@ public class FlightOffers{
         client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
-                
-                makeHTTPGetRequestAuth(flightOffers, auth: auth, body: "", onCompletion: {
+                let body = "?origin=\(origin)&destination=\(destination)&departureDate=\(departureDate)"
+                makeHTTPGetRequestAuth(flightOffers, auth: auth, body: body, onCompletion: {
                     data,err  in
                     if let error = err {
                         onCompletion(JSON(parseJSON: "{error:\(error)}"))
                     }else{
                         onCompletion(data)
                     }
-                    
                 })
-                
             }else{
                 onCompletion("error")
             }

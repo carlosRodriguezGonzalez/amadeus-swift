@@ -14,11 +14,11 @@ public typealias ServiceResponse = (JSON, NSError?) -> Void
 fileprivate let baseURL = "https://test.api.amadeus.com/"
 
 public func makeHTTPGetRequestAuth(_ path: String, auth: String, body: String, onCompletion: @escaping ServiceResponse) {
-    let url = baseURL + path
+    let url = baseURL + path + body
     let request = NSMutableURLRequest(url: URL(string: url)!)
-    request.httpBody = body.data(using: String.Encoding.utf8);
+    //request.httpBody = body.data(using: String.Encoding.utf8);
     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-    request.setValue("\(auth)", forHTTPHeaderField: "Bearer-Token")
+    request.setValue("Bearer \(auth)", forHTTPHeaderField: "Authorization")
     
     let session = URLSession.shared
     let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error -> Void in
