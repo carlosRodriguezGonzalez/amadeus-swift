@@ -10,12 +10,15 @@ import UIKit
 import Amadeus
 
 class ViewController: UIViewController {
-
+    
+    var amadeus: Amadeus!
+    var btnClick: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     
-        let amadeus = Amadeus(client_id: "123", client_secret: "234")
+        self.amadeus = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
         
         //amadeus.auth.testAuth()
         
@@ -24,9 +27,20 @@ class ViewController: UIViewController {
             print("access:",access_token)
         })
         
-        
+        btnClick = UIButton()
+        btnClick.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
+        btnClick.addTarget(self, action: #selector(press), for: .touchUpInside)
+        btnClick.backgroundColor = .blue
+        view.addSubview(btnClick)
     }
 
+    @objc func press(){
+        amadeus.client.getAccessToken(onCompletion: {
+            access_token in
+            print("access:",access_token)
+        })
+
+    }
 
 }
 

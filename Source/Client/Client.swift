@@ -55,7 +55,7 @@ public class Client {
         }
         
         if let expires_time = data["expires_in"].int{
-            self.expires_time = expires_time + Int(Date().timeIntervalSince1970 * 1000)
+            self.expires_time = expires_time * 1000 + Int(Date().timeIntervalSince1970 * 1000)
         }else{
             self.expires_time = 0
         }
