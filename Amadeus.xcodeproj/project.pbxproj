@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		68269131F900673BC83ED62A /* Pods_Amadeus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB197647685023AB491A8B /* Pods_Amadeus.framework */; };
 		D4AB351CC0326B121C8DA4C6 /* Pods_AmadeusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3637D24B29675BD53705DDE /* Pods_AmadeusTests.framework */; };
+		EAA8CCB721A0CF58004B2123 /* FlightDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8CCB621A0CF58004B2123 /* FlightDestinations.swift */; };
 		EAD7B1D3218F49B500C23760 /* Amadeus.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD7B1D1218F49B500C23760 /* Amadeus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAD7B1DC218F519D00C23760 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DB218F519D00C23760 /* HTTPRequest.swift */; };
 		EAD7B1DE218F5ADD00C23760 /* Amadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DD218F5ADD00C23760 /* Amadeus.swift */; };
@@ -36,6 +37,7 @@
 		D3637D24B29675BD53705DDE /* Pods_AmadeusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmadeusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36989E0E6371B7357EDB4B6 /* Pods-Amadeus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amadeus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amadeus/Pods-Amadeus.debug.xcconfig"; sourceTree = "<group>"; };
 		E6FECA82AE43B379B30F0579 /* Pods-AmadeusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmadeusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmadeusTests/Pods-AmadeusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EAA8CCB621A0CF58004B2123 /* FlightDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDestinations.swift; sourceTree = "<group>"; };
 		EAD7B1CE218F49B500C23760 /* Amadeus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amadeus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD7B1D1218F49B500C23760 /* Amadeus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Amadeus.h; sourceTree = "<group>"; };
 		EAD7B1D2218F49B500C23760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD7B22C218F719E00C23760 /* FlightOffers.swift */,
+				EAA8CCB621A0CF58004B2123 /* FlightDestinations.swift */,
 			);
 			path = shopping;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				EAD7B22D218F719E00C23760 /* FlightOffers.swift in Sources */,
 				EAD7B1DE218F5ADD00C23760 /* Amadeus.swift in Sources */,
 				EAD7B1DC218F519D00C23760 /* HTTPRequest.swift in Sources */,
+				EAA8CCB721A0CF58004B2123 /* FlightDestinations.swift in Sources */,
 				EAD7B1E0218F5B1100C23760 /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,9 +11,11 @@ import Foundation
 public class Shopping {
     
     public let flightOffers:FlightOffers
+    public let flightDestinations:FlightDestinations
     
     public init(client: Client) {
         flightOffers = FlightOffers(client: client)
+        flightDestinations = FlightDestinations(client: client)
     }
     
     
