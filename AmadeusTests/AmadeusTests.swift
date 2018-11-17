@@ -29,7 +29,7 @@ class AmadeusTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "HOLA")
         
-        ama.shopping.flightOffers.get(origin: "MAD", destination: "LUX", departureDate: "2018-12-10", onCompletion: {
+        ama.shopping.flightDestinations.get(origin: "MAD", maxPrice: 10000, onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)

@@ -19,7 +19,7 @@ public class FlightDestinations{
         self.client = client
     }
     
-    public func get(origin:String, maxPrice:Double, onCompletion: @escaping (JSON) -> Void){
+    public func get(origin:String, maxPrice:Int, onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
