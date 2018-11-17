@@ -12,10 +12,12 @@ public class Shopping {
     
     public let flightOffers:FlightOffers
     public let flightDestinations:FlightDestinations
+    public let flightDates:FlightDates
     
     public init(client: Client) {
         flightOffers = FlightOffers(client: client)
         flightDestinations = FlightDestinations(client: client)
+        flightDates = FlightDates(client: client)
     }
     
     
