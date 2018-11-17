@@ -72,4 +72,20 @@ class AmadeusTests: XCTestCase {
         
     }
 
+    func testFareSearch(){
+        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        
+        let expectation = XCTestExpectation(description: "TimeOut")
+        
+        ama.travel.analytics.fareSearch.get(origin: "NCE", sourceCountry: "FR", period: "2018-11", onCompletion: {
+            data in
+            print("DATA ES: ", data)
+            XCTAssertNotNil(data)
+            expectation.fulfill()
+        })
+        
+        wait(for: [expectation], timeout: 60)
+        
+    }
+
 }
