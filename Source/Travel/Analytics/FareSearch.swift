@@ -16,7 +16,7 @@ fileprivate let fareSearch = "v1/travel/analytics/fare-searches"
 /// Access via the `Amadeus` object
 /// ```
 /// let amadeus = Amadeus(client_id, client_secret)
-/// amadeus.travel.analytics.fareSearch.get
+/// amadeus.travel.analytics.fareSearch
 /// ```
 public class FareSearch{
     
