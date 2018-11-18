@@ -1,5 +1,5 @@
 //
-//  Traveled.swift
+//  Booked.swift
 //  Amadeus
 //
 //  Created by Charly Maxter on 18/11/2018.
@@ -9,9 +9,9 @@
 import Foundation
 import SwiftyJSON
 
-fileprivate let traveled = "v1/travel/analytics/air-traffic/traveled"
+fileprivate let booked = "v1/travel/analytics/air-traffic/traveled"
 
-public class Traveled{
+public class Booked{
     
     private var client: Client
     
@@ -24,7 +24,7 @@ public class Traveled{
             (auth) in
             if auth != "error" {
                 let body = "?originCityCode=\(originCityCode)&period=\(period)"
-                makeHTTPGetRequestAuth(traveled, auth: auth, body: body, onCompletion: {
+                makeHTTPGetRequestAuth(booked, auth: auth, body: body, onCompletion: {
                     data,err  in
                     if let error = err {
                         onCompletion(JSON(parseJSON: "{error:\(error)}"))
