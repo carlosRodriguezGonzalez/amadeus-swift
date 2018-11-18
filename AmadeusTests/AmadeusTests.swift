@@ -151,5 +151,21 @@ class AmadeusTests: XCTestCase {
         wait(for: [expectation], timeout: 60)
         
     }
+    
+    func testCheckinLinks(){
+        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        
+        let expectation = XCTestExpectation(description: "TimeOut")
+        
+        ama.referenceData.urls.checkinLinks.get(airlineCode: "BA", onCompletion: {
+            data in
+            print("DATA ES: ", data)
+            XCTAssertNotNil(data)
+            expectation.fulfill()
+        })
+        
+        wait(for: [expectation], timeout: 60)
+        
+    }
 
 }
