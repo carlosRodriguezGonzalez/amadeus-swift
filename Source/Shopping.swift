@@ -8,7 +8,7 @@
 
 import Foundation
 
-/// A namespaced client for the `/v1/shopping` endpoints
+/// A namespaced client for the `v1/shopping` endpoints
 ///
 /// Access via the `Amadeus` object
 /// ```swift
