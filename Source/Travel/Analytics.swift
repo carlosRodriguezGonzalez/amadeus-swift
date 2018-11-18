@@ -11,6 +11,10 @@ import Foundation
 /// A namespaced client for the `v2/travel/analytics` endpoints
 ///
 /// Access via the `Amadeus` object
+/// ```
+/// let amadeus = Amadeus(client_id, client_secret)
+/// amadeus.travel.analytics
+/// ```
 public class Analytics{
     
     public let fareSearch:FareSearch
