@@ -4,28 +4,28 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/build/Release-iphoneos/Amadeus.framework/Headers",
+      'name': "/Users/sergioredondo/Documents/GIT/amadeus-swift/build/Release-iphoneos/Amadeus.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Amadeus-Swift.h",
-          'external-contents': "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/build/Release-iphoneos/Amadeus.framework/Headers/Amadeus-Swift.h"
+          'external-contents': "/Users/sergioredondo/Documents/GIT/amadeus-swift/build/Release-iphoneos/Amadeus.framework/Headers/Amadeus-Swift.h"
         },
         {
           'type': 'file',
           'name': "Amadeus.h",
-          'external-contents': "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Amadeus.h"
+          'external-contents': "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Amadeus.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/build/Release-iphoneos/Amadeus.framework/Modules",
+      'name': "/Users/sergioredondo/Documents/GIT/amadeus-swift/build/Release-iphoneos/Amadeus.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/build/Amadeus.build/Release-iphoneos/Amadeus.build/module.modulemap"
+          'external-contents': "/Users/sergioredondo/Documents/GIT/amadeus-swift/build/Amadeus.build/Release-iphoneos/Amadeus.build/module.modulemap"
         }
       ]
     }

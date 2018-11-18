@@ -14,7 +14,7 @@
     <a title="Client Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html">Amadeus Docs</a> (20% documented)</p>
+        <p><a href="../index.html">Amadeus Docs</a> (35% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -139,9 +139,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>this method call to method @needRefresh and if it is true, call to @getAuthToken to take
-the access_token and refresh the token, if not return the access_token.
-And store the access_token.</p>
+                        <p>This method checks if the access_tocken needs to be renewed and, if needed, request the access_token,
+updates the token and save it, if you do not have to renew it returns the access_token that we had stored</p>
 <div class="aside aside-important">
     <p class="aside-title">Important</p>
     <p>This method use onCompletion.</p>
@@ -159,7 +158,7 @@ And store the access_token.</p>
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>access_token: the client access token in String format</p>
+                        <p>access_token: <code>String</code> the client access token</p>
                       </div>
                     </section>
                   </div>
