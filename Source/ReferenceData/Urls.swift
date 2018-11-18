@@ -1,5 +1,5 @@
 //
-//  ReferenceData.swift
+//  Urls.swift
 //  Amadeus
 //
 //  Created by Charly Maxter on 18/11/2018.
@@ -8,13 +8,11 @@
 
 import Foundation
 
-public class ReferenceData{
+public class Urls{
     
-    public let airLines:AirLines
-    public let urls:Urls
+    public let checkinLinks:CheckinLinks
     
     public init(client:Client){
-        airLines = AirLines(client: client)
-        urls = Urls(client: client)
+        checkinLinks = CheckinLinks(client:client)
     }
 }
