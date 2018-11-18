@@ -11,7 +11,7 @@ import SwiftyJSON
 
 fileprivate let flightOffers = "v1/shopping/flight-offers"
 
-/// A namespaced client for the `/v1/shopping/flight-offers` endpoints
+/// A namespaced client for the `v1/shopping/flight-offers` endpoints
 ///
 /// Access via the `Amadeus` object
 /// ```swift

@@ -177,35 +177,14 @@
     },
     {
       "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/shopping/FlightDates.swift",
-      "line": 14,
-      "symbol": "FlightDates",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/shopping/FlightDates.swift",
-      "line": 18,
+      "line": 25,
       "symbol": "FlightDates.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/shopping/FlightDates.swift",
-      "line": 22,
-      "symbol": "FlightDates.get(origin:destination:onCompletion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/shopping/FlightDestinations.swift",
-      "line": 14,
-      "symbol": "FlightDestinations",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/shopping/FlightDestinations.swift",
-      "line": 18,
+      "line": 25,
       "symbol": "FlightDestinations.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
