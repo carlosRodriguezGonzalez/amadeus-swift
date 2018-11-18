@@ -19,6 +19,18 @@ public class FlightOffers{
         self.client = client
     }
     
+    /**
+     Find the cheapest bookable flights for a date.
+ 
+     - Parameters:
+         - origin: *String* City/Airport IATA code from which the flight will depart.
+         - destination: *String* City/Airport IATA code to which traveler is going.
+         - departureDate: *String* The departure date for the flight.
+     
+     - Returns:
+        JSON object
+     
+     */
     public func get(origin:String, destination:String, departureDate:String, onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in
