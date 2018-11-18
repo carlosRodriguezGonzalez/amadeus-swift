@@ -31,7 +31,7 @@ public class Booked{
     ///   ## Example
     ///   Find the air traffic from London in May 2016
     ///
-    ///     amadeus.travel.analytics.airTraffic.booked(
+    ///     amadeus.travel.analytics.airTraffic.booked.get(
     ///         originCityCode:"LON",
     ///         period: "2016-05",
     ///         onCompletion: {
