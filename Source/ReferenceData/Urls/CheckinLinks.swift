@@ -11,6 +11,13 @@ import SwiftyJSON
 
 fileprivate let checkinLinks = "v2/reference-data/urls/checkin-links"
 
+/// A namespaced client for the `v2/reference-data/urls/checkin-links` endpoints
+///
+/// Access via the `Amadeus` object
+/// ```swift
+/// let amadeus = Amadeus(client_id, secret_id)
+/// amadeus.referenceData.urls.checkinLinks
+/// ```
 public class CheckinLinks{
     
     private var client: Client
@@ -19,6 +26,21 @@ public class CheckinLinks{
         self.client = client
     }
     
+    /// Returns the checkin links for an airline.
+    ///
+    ///   ## Example
+    ///   Find a the checkin links for Air France
+    ///
+    ///     amadeus.referenceData.urls.checkinLinks.get(
+    ///         airlineCode:"AF",
+    ///         onCompletion: {
+    ///             data in ...}
+    ///     )
+    /// - Parameters:
+    ///    - airlineCode: `String` Airline ID.
+    ///
+    /// - Returns:
+    ///    `JSON` object
     public func get(airlineCode:String, onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in
