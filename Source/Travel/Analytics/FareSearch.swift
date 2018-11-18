@@ -14,8 +14,9 @@ fileprivate let fareSearch = "v1/travel/analytics/fare-searches"
 /// A namespaced client for the `v1/travel/analytics/fare-searches` endpoints
 ///
 /// Access via the `Amadeus` object
-/// let ama = Amadeus(client_id, client_secret)
-/// ama.travel.analytics.fareSearch.get
+/// ```
+/// let amadeus = Amadeus(client_id, client_secret)
+/// amadeus.travel.analytics.fareSearch.get
 /// ```
 public class FareSearch{
     
