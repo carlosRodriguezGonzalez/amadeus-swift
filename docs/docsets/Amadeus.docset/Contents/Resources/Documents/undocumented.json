@@ -79,35 +79,35 @@
     },
     {
       "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/FareSearch.swift",
-      "line": 24,
+      "line": 25,
       "symbol": "FareSearch.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics.swift",
-      "line": 19,
+      "line": 16,
       "symbol": "Analytics.fareSearch",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics.swift",
-      "line": 21,
+      "line": 18,
       "symbol": "Analytics.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "Travel.analytics",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "Travel.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
