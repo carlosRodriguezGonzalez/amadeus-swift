@@ -1,0 +1,11 @@
+framework module Amadeus {
+  umbrella header "Amadeus.h"
+
+  export *
+  module * { export * }
+}
+
+module Amadeus.Swift {
+    header "Amadeus-Swift.h"
+    requires objc
+}

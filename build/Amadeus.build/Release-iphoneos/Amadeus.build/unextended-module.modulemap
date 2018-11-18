@@ -1,0 +1,10 @@
+framework module Amadeus {
+  umbrella header "Amadeus.h"
+
+  export *
+  module * { export * }
+}
+
+module Amadeus.__Swift {
+    exclude header "Amadeus-Swift.h"
+}
