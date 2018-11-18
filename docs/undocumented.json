@@ -100,35 +100,28 @@
     },
     {
       "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData.swift",
-      "line": 11,
-      "symbol": "ReferenceData",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData.swift",
-      "line": 13,
+      "line": 20,
       "symbol": "ReferenceData.airLines",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData.swift",
-      "line": 14,
+      "line": 21,
       "symbol": "ReferenceData.urls",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData.swift",
-      "line": 15,
+      "line": 22,
       "symbol": "ReferenceData.locations",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData.swift",
-      "line": 17,
+      "line": 24,
       "symbol": "ReferenceData.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
