@@ -167,5 +167,37 @@ class AmadeusTests: XCTestCase {
         wait(for: [expectation], timeout: 60)
         
     }
+    
+    func testLocations(){
+        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        
+        let expectation = XCTestExpectation(description: "TimeOut")
+        
+        ama.referenceData.locations.get(subType: "AIRPORT,CITY", keyword: "lon", onCompletion: {
+            data in
+            print("DATA ES: ", data)
+            XCTAssertNotNil(data)
+            expectation.fulfill()
+        })
+        
+        wait(for: [expectation], timeout: 60)
+        
+    }
+    
+    func testAirports(){
+        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        
+        let expectation = XCTestExpectation(description: "TimeOut")
+        
+        ama.referenceData.locations.airports.get(longitude: 49.0000, latitude: 2.55, onCompletion: {
+            data in
+            print("DATA ES: ", data)
+            XCTAssertNotNil(data)
+            expectation.fulfill()
+        })
+        
+        wait(for: [expectation], timeout: 60)
+        
+    }
 
 }
