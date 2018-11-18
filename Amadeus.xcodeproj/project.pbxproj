@@ -21,6 +21,8 @@
 		EAC2645721A1EE5F00E011A2 /* BusiestPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2645621A1EE5F00E011A2 /* BusiestPeriod.swift */; };
 		EAC2645A21A1F07800E011A2 /* ReferenceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2645921A1F07800E011A2 /* ReferenceData.swift */; };
 		EAC2645C21A1F11400E011A2 /* AirLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2645B21A1F11400E011A2 /* AirLines.swift */; };
+		EAC2645E21A1F9BD00E011A2 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2645D21A1F9BD00E011A2 /* Urls.swift */; };
+		EAC2646121A1F9F200E011A2 /* CheckinLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2646021A1F9F200E011A2 /* CheckinLinks.swift */; };
 		EAD7B1D3218F49B500C23760 /* Amadeus.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD7B1D1218F49B500C23760 /* Amadeus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAD7B1DC218F519D00C23760 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DB218F519D00C23760 /* HTTPRequest.swift */; };
 		EAD7B1DE218F5ADD00C23760 /* Amadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DD218F5ADD00C23760 /* Amadeus.swift */; };
@@ -60,6 +62,8 @@
 		EAC2645621A1EE5F00E011A2 /* BusiestPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusiestPeriod.swift; sourceTree = "<group>"; };
 		EAC2645921A1F07800E011A2 /* ReferenceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceData.swift; sourceTree = "<group>"; };
 		EAC2645B21A1F11400E011A2 /* AirLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirLines.swift; sourceTree = "<group>"; };
+		EAC2645D21A1F9BD00E011A2 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		EAC2646021A1F9F200E011A2 /* CheckinLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckinLinks.swift; sourceTree = "<group>"; };
 		EAD7B1CE218F49B500C23760 /* Amadeus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amadeus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD7B1D1218F49B500C23760 /* Amadeus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Amadeus.h; sourceTree = "<group>"; };
 		EAD7B1D2218F49B500C23760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,9 +150,19 @@
 		EAC2645821A1F01700E011A2 /* ReferenceData */ = {
 			isa = PBXGroup;
 			children = (
+				EAC2645F21A1F9C100E011A2 /* Urls */,
 				EAC2645B21A1F11400E011A2 /* AirLines.swift */,
+				EAC2645D21A1F9BD00E011A2 /* Urls.swift */,
 			);
 			path = ReferenceData;
+			sourceTree = "<group>";
+		};
+		EAC2645F21A1F9C100E011A2 /* Urls */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2646021A1F9F200E011A2 /* CheckinLinks.swift */,
+			);
+			path = Urls;
 			sourceTree = "<group>";
 		};
 		EAD7B1C4218F49B500C23760 = {
@@ -411,6 +425,8 @@
 				EAA8CCB721A0CF58004B2123 /* FlightDestinations.swift in Sources */,
 				EAC2645A21A1F07800E011A2 /* ReferenceData.swift in Sources */,
 				EAC2645121A1EB1600E011A2 /* AirTraffic.swift in Sources */,
+				EAC2645E21A1F9BD00E011A2 /* Urls.swift in Sources */,
+				EAC2646121A1F9F200E011A2 /* CheckinLinks.swift in Sources */,
 				EAA8CCBB21A0D4D4004B2123 /* HotelOffers.swift in Sources */,
 				EAA8CCBF21A0D71F004B2123 /* Travel.swift in Sources */,
 				EAA8CCB921A0D186004B2123 /* FlightDates.swift in Sources */,
