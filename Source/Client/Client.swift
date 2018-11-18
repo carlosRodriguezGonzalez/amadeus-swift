@@ -31,14 +31,13 @@ public class Client {
     }
     
 
-    ///     this method call to method @needRefresh and if it is true, call to @getAuthToken to take
-    ///     the access_token and refresh the token, if not return the access_token.
-    ///     And store the access_token.
+    ///This method checks if the access_tocken needs to be renewed and, if needed, request the access_token,
+    ///updates the token and save it, if you do not have to renew it returns the access_token that we had stored
     ///
-    ///      - important: This method use onCompletion.
+    /// - Important: This method use onCompletion.
     ///
-    ///      - Returns:
-    ///     access_token: the client access token in String format
+    /// - Returns:
+    ///     access_token: `String` the client access token
     public func getAccessToken(onCompletion: @escaping (String) -> Void){
         if needRefresh() {
             //needRefresh()

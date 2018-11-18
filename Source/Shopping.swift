@@ -8,6 +8,13 @@
 
 import Foundation
 
+/// A namespaced client for the `/v1/shopping` endpoints
+///
+/// Access via the `Amadeus` object
+/// ```swift
+/// let amadeus = Amadeus(client_id, secret_id)
+/// amadeus.shopping
+/// ```
 public class Shopping {
     
     public let flightOffers:FlightOffers

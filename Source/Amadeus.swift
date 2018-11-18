@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// A namespaced amadeus
 public class Amadeus {
     
     public let client:Client
