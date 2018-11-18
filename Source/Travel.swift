@@ -8,6 +8,13 @@
 
 import Foundation
 
+
+/// A namespaced client for the `v1/travel/` endpoints
+///
+/// Access via the `Amadeus` object
+/// let ama = Amadeus(client_id, client_secret)
+/// ama.travel
+/// ```
 public class Travel{
     
     public let analytics:Analytics
