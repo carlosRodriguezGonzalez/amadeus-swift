@@ -8,6 +8,13 @@
 
 import Foundation
 
+/// A namespaced client for the `v1/travel/analytics/air-traffic` endpoints
+///
+/// Access via the `Amadeus` object
+/// ```
+/// let amadeus = Amadeus(client_id, client_secret)
+/// amadeus.travel.analytics.airTraffic
+/// ```
 public class AirTraffic{
     
     public let traveled:Traveled
