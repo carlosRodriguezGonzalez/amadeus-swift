@@ -14,8 +14,10 @@ import Foundation
 public class Analytics{
     
     public let fareSearch:FareSearch
+    public let airTraffic:AirTraffic
     
     public init(client:Client){
         fareSearch = FareSearch(client: client)
+        airTraffic = AirTraffic(client: client)
     }
 }
