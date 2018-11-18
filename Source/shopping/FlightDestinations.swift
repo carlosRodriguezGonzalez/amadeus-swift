@@ -12,7 +12,7 @@ import SwiftyJSON
 fileprivate let flightDestinations = "v1/shopping/flight-destinations"
 
 /// A namespaced client for the `v1/shopping/flight-destinations` endpoints
-
+///
 /// Access via the `Amadeus` object
 /// ```swift
 /// let amadeus = Amadeus(client_id, secret_id)
