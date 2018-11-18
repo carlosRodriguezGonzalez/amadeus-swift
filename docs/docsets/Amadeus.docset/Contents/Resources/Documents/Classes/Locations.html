@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Travel Class Reference</title>
+    <title>Locations Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/Travel" class="dashAnchor"></a>
-    <a title="Travel Class Reference"></a>
+    <a name="//apple_ref/swift/Class/Locations" class="dashAnchor"></a>
+    <a title="Locations Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">Amadeus Docs</a> (42% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">Amadeus Reference</a>
         <img id="carat" src="../img/carat.png" />
-        Travel Class Reference
+        Locations Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -116,18 +116,18 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Travel</h1>
+            <h1>Locations</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Travel</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Locations</span></code></pre>
 
                 </div>
               </div>
-            <p>A namespaced client for the <code>v1/travel/</code> endpoints</p>
+            <p>A namespaced client for the <code>v2/reference-data/locations</code> endpoints</p>
 
 <p>Access via the <code><a href="../Classes/Amadeus.html">Amadeus</a></code> object</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">amadeus</span> <span class="o">=</span> <span class="kt">Amadeus</span><span class="p">(</span><span class="n">client_id</span><span class="p">,</span> <span class="n">client_secret</span><span class="p">)</span>
-<span class="n">amadeus</span><span class="o">.</span><span class="n">travel</span>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">amadeus</span> <span class="o">=</span> <span class="kt">Amadeus</span><span class="p">(</span><span class="n">client_id</span><span class="p">,</span> <span class="n">secret_id</span><span class="p">)</span>
+<span class="n">amadeus</span><span class="o">.</span><span class="n">referenceData</span><span class="o">.</span><span class="n">locations</span>
 </code></pre>
 
           </section>
@@ -137,9 +137,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7Amadeus6TravelC9analyticsAA9AnalyticsCvp"></a>
-                    <a name="//apple_ref/swift/Property/analytics" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7Amadeus6TravelC9analyticsAA9AnalyticsCvp">analytics</a>
+                    <a name="/s:7Amadeus9LocationsC8airportsAA8AirportsCvp"></a>
+                    <a name="//apple_ref/swift/Property/airports" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Amadeus9LocationsC8airportsAA8AirportsCvp">airports</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -154,7 +154,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">analytics</span><span class="p">:</span> <span class="kt"><a href="../Classes/Analytics.html">Analytics</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">airports</span><span class="p">:</span> <span class="kt"><a href="../Classes/Airports.html">Airports</a></span></code></pre>
 
                         </div>
                       </div>
@@ -164,9 +164,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7Amadeus6TravelC6clientAcA6ClientC_tcfc"></a>
+                    <a name="/s:7Amadeus9LocationsC6clientAcA6ClientC_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(client:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7Amadeus6TravelC6clientAcA6ClientC_tcfc">init(client:)</a>
+                    <a class="token" href="#/s:7Amadeus9LocationsC6clientAcA6ClientC_tcfc">init(client:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -184,6 +184,78 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/Client.html">Client</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/get(subType:keyword:onCompletion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">get(subType:keyword:onCompletion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a list of airports and cities matching a given keyword.</p>
+
+<p>## Example
+  Find any location starting with &lsquo;lon&rsquo;</p>
+<pre class="highlight swift"><code><span class="n">amadeus</span><span class="o">.</span><span class="n">referenceData</span><span class="o">.</span><span class="n">locations</span><span class="o">.</span><span class="nf">get</span><span class="p">(</span>
+    <span class="nv">subType</span><span class="p">:</span><span class="s">"AIRPORT,CITY"</span><span class="p">,</span>
+    <span class="nv">keyword</span><span class="p">:</span><span class="s">"lon"</span><span class="p">,</span>
+    <span class="nv">onCompletion</span><span class="p">:</span> <span class="p">{</span>
+        <span class="n">data</span> <span class="k">in</span> <span class="o">...</span><span class="p">}</span>
+<span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">get</span><span class="p">(</span><span class="nv">subType</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">keyword</span><span class="p">:</span><span class="kt">String</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">JSON</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>subType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String</code> Type of location to search for</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keyword</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>String</code> That should represent the start of a word in a city or airport name or code.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>JSON</code> object</p>
                       </div>
                     </section>
                   </div>

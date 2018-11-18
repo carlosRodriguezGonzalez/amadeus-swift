@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Travel Class Reference</title>
+    <title>Airports Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,8 +10,8 @@
     
   </head>
   <body>
-    <a name="//apple_ref/swift/Class/Travel" class="dashAnchor"></a>
-    <a title="Travel Class Reference"></a>
+    <a name="//apple_ref/swift/Class/Airports" class="dashAnchor"></a>
+    <a title="Airports Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">Amadeus Docs</a> (42% documented)</p>
@@ -21,7 +21,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">Amadeus Reference</a>
         <img id="carat" src="../img/carat.png" />
-        Travel Class Reference
+        Airports Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -116,18 +116,18 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Travel</h1>
+            <h1>Airports</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Travel</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Airports</span></code></pre>
 
                 </div>
               </div>
-            <p>A namespaced client for the <code>v1/travel/</code> endpoints</p>
+            <p>A namespaced client for the <code>v2/reference-data/locations/airports</code> endpoints</p>
 
 <p>Access via the <code><a href="../Classes/Amadeus.html">Amadeus</a></code> object</p>
-<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">amadeus</span> <span class="o">=</span> <span class="kt">Amadeus</span><span class="p">(</span><span class="n">client_id</span><span class="p">,</span> <span class="n">client_secret</span><span class="p">)</span>
-<span class="n">amadeus</span><span class="o">.</span><span class="n">travel</span>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">amadeus</span> <span class="o">=</span> <span class="kt">Amadeus</span><span class="p">(</span><span class="n">client_id</span><span class="p">,</span> <span class="n">secret_id</span><span class="p">)</span>
+<span class="n">amadeus</span><span class="o">.</span><span class="n">referenceData</span><span class="o">.</span><span class="n">locations</span><span class="o">.</span><span class="n">airports</span>
 </code></pre>
 
           </section>
@@ -137,36 +137,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7Amadeus6TravelC9analyticsAA9AnalyticsCvp"></a>
-                    <a name="//apple_ref/swift/Property/analytics" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7Amadeus6TravelC9analyticsAA9AnalyticsCvp">analytics</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Undocumented</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">analytics</span><span class="p">:</span> <span class="kt"><a href="../Classes/Analytics.html">Analytics</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7Amadeus6TravelC6clientAcA6ClientC_tcfc"></a>
+                    <a name="/s:7Amadeus8AirportsC6clientAcA6ClientC_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(client:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7Amadeus6TravelC6clientAcA6ClientC_tcfc">init(client:)</a>
+                    <a class="token" href="#/s:7Amadeus8AirportsC6clientAcA6ClientC_tcfc">init(client:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -184,6 +157,78 @@
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">client</span><span class="p">:</span> <span class="kt"><a href="../Classes/Client.html">Client</a></span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/get(longitude:latitude:onCompletion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">get(longitude:latitude:onCompletion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a list of relevant airports near to a given point.</p>
+
+<p>## Example
+  Find the nearest airport to the 49.0000,2.55 lat/long</p>
+<pre class="highlight swift"><code><span class="n">amadeus</span><span class="o">.</span><span class="n">referenceData</span><span class="o">.</span><span class="n">locations</span><span class="o">.</span><span class="n">airports</span><span class="o">.</span><span class="nf">get</span><span class="p">(</span>
+    <span class="nv">longitude</span><span class="p">:</span><span class="mf">49.0000</span><span class="p">,</span>
+    <span class="nv">latitude</span><span class="p">:</span><span class="mf">2.55</span><span class="p">,</span>
+    <span class="nv">onCompletion</span><span class="p">:</span> <span class="p">{</span>
+        <span class="n">data</span> <span class="k">in</span> <span class="o">...</span><span class="p">}</span>
+<span class="p">)</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">get</span><span class="p">(</span><span class="nv">longitude</span><span class="p">:</span><span class="kt">Double</span><span class="p">,</span> <span class="nv">latitude</span><span class="p">:</span><span class="kt">Double</span><span class="p">,</span> <span class="nv">onCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">JSON</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>longitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Double</code> longitude location to be at the center of the search circle.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>latitude</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>Double</code> latitude location to be at the center of the search circle.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>JSON</code> object</p>
                       </div>
                     </section>
                   </div>

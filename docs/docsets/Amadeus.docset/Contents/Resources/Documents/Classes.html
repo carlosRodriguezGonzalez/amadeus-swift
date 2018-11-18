@@ -14,7 +14,7 @@
     <a title="Classes  Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="index.html">Amadeus Docs</a> (33% documented)</p>
+        <p><a href="index.html">Amadeus Docs</a> (42% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -35,6 +35,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/AirTraffic.html">AirTraffic</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Airports.html">Airports</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/Amadeus.html">Amadeus</a>
@@ -68,6 +71,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="Classes/HotelOffers.html">HotelOffers</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Locations.html">Locations</a>
               </li>
               <li class="nav-group-task">
                 <a href="Classes/ReferenceData.html">ReferenceData</a>
@@ -226,7 +232,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A namespaced client for the <code>v1/reference-data/airlines</code> endpoints</p>
+
+<p>Access via the <code><a href="Classes/Amadeus.html">Amadeus</a></code> object</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">amadeus</span> <span class="o">=</span> <span class="kt">Amadeus</span><span class="p">(</span><span class="n">client_id</span><span class="p">,</span> <span class="n">secret_id</span><span class="p">)</span>
+<span class="n">amadeus</span><span class="o">.</span><span class="n">referenceData</span><span class="o">.</span><span class="n">airLines</span>
+</code></pre>
 
                         <a href="Classes/AirLines.html" class="slightly-smaller">See more</a>
                       </div>
@@ -235,6 +246,80 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">AirLines</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Amadeus9LocationsC"></a>
+                    <a name="//apple_ref/swift/Class/Locations" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Amadeus9LocationsC">Locations</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A namespaced client for the <code>v2/reference-data/locations</code> endpoints</p>
+
+<p>Access via the <code><a href="Classes/Amadeus.html">Amadeus</a></code> object</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">amadeus</span> <span class="o">=</span> <span class="kt">Amadeus</span><span class="p">(</span><span class="n">client_id</span><span class="p">,</span> <span class="n">secret_id</span><span class="p">)</span>
+<span class="n">amadeus</span><span class="o">.</span><span class="n">referenceData</span><span class="o">.</span><span class="n">locations</span>
+</code></pre>
+
+                        <a href="Classes/Locations.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Locations</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7Amadeus8AirportsC"></a>
+                    <a name="//apple_ref/swift/Class/Airports" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7Amadeus8AirportsC">Airports</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A namespaced client for the <code>v2/reference-data/locations/airports</code> endpoints</p>
+
+<p>Access via the <code><a href="Classes/Amadeus.html">Amadeus</a></code> object</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">amadeus</span> <span class="o">=</span> <span class="kt">Amadeus</span><span class="p">(</span><span class="n">client_id</span><span class="p">,</span> <span class="n">secret_id</span><span class="p">)</span>
+<span class="n">amadeus</span><span class="o">.</span><span class="n">referenceData</span><span class="o">.</span><span class="n">locations</span><span class="o">.</span><span class="n">airports</span>
+</code></pre>
+
+                        <a href="Classes/Airports.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Airports</span></code></pre>
 
                         </div>
                       </div>
@@ -258,7 +343,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A namespaced client for the <code>v2/reference-data/urls</code> endpoints</p>
+
+<p>Access via the <code><a href="Classes/Amadeus.html">Amadeus</a></code> object</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">amadeus</span> <span class="o">=</span> <span class="kt">Amadeus</span><span class="p">(</span><span class="n">client_id</span><span class="p">,</span> <span class="n">secret_id</span><span class="p">)</span>
+<span class="n">amadeus</span><span class="o">.</span><span class="n">referenceData</span><span class="o">.</span><span class="n">urls</span>
+</code></pre>
 
                         <a href="Classes/Urls.html" class="slightly-smaller">See more</a>
                       </div>
@@ -290,7 +380,12 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>A namespaced client for the <code>v2/reference-data/urls/checkin-links</code> endpoints</p>
+
+<p>Access via the <code><a href="Classes/Amadeus.html">Amadeus</a></code> object</p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">amadeus</span> <span class="o">=</span> <span class="kt">Amadeus</span><span class="p">(</span><span class="n">client_id</span><span class="p">,</span> <span class="n">secret_id</span><span class="p">)</span>
+<span class="n">amadeus</span><span class="o">.</span><span class="n">referenceData</span><span class="o">.</span><span class="n">urls</span><span class="o">.</span><span class="n">checkinLinks</span>
+</code></pre>
 
                         <a href="Classes/CheckinLinks.html" class="slightly-smaller">See more</a>
                       </div>
@@ -322,7 +417,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>A namespaced client for the <code>/v1/shopping</code> endpoints</p>
+                        <p>A namespaced client for the <code>v1/shopping</code> endpoints</p>
 
 <p>Access via the <code><a href="Classes/Amadeus.html">Amadeus</a></code> object</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">amadeus</span> <span class="o">=</span> <span class="kt">Amadeus</span><span class="p">(</span><span class="n">client_id</span><span class="p">,</span> <span class="n">secret_id</span><span class="p">)</span>
