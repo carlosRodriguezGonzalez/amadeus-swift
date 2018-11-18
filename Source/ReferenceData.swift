@@ -12,9 +12,11 @@ public class ReferenceData{
     
     public let airLines:AirLines
     public let urls:Urls
+    public let locations:Locations
     
     public init(client:Client){
         airLines = AirLines(client: client)
         urls = Urls(client: client)
+        locations = Locations(client: client)
     }
 }
