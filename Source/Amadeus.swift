@@ -14,11 +14,13 @@ public class Amadeus {
     public let client:Client
     public let shopping:Shopping
     public let travel:Travel
+    public let referenceData:ReferenceData
     
     public init(client_id: String, client_secret:String) {
         client = Client(client_id: client_id, client_secret: client_secret)
         shopping = Shopping(client: client)
         travel = Travel(client: client)
+        referenceData = ReferenceData(client: client)
     }
     
     
