@@ -19,6 +19,8 @@
 		EAC2645321A1EBA800E011A2 /* Traveled.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2645221A1EBA800E011A2 /* Traveled.swift */; };
 		EAC2645521A1ED8300E011A2 /* Booked.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2645421A1ED8300E011A2 /* Booked.swift */; };
 		EAC2645721A1EE5F00E011A2 /* BusiestPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2645621A1EE5F00E011A2 /* BusiestPeriod.swift */; };
+		EAC2645A21A1F07800E011A2 /* ReferenceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2645921A1F07800E011A2 /* ReferenceData.swift */; };
+		EAC2645C21A1F11400E011A2 /* AirLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC2645B21A1F11400E011A2 /* AirLines.swift */; };
 		EAD7B1D3218F49B500C23760 /* Amadeus.h in Headers */ = {isa = PBXBuildFile; fileRef = EAD7B1D1218F49B500C23760 /* Amadeus.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EAD7B1DC218F519D00C23760 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DB218F519D00C23760 /* HTTPRequest.swift */; };
 		EAD7B1DE218F5ADD00C23760 /* Amadeus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B1DD218F5ADD00C23760 /* Amadeus.swift */; };
@@ -56,6 +58,8 @@
 		EAC2645221A1EBA800E011A2 /* Traveled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traveled.swift; sourceTree = "<group>"; };
 		EAC2645421A1ED8300E011A2 /* Booked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booked.swift; sourceTree = "<group>"; };
 		EAC2645621A1EE5F00E011A2 /* BusiestPeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusiestPeriod.swift; sourceTree = "<group>"; };
+		EAC2645921A1F07800E011A2 /* ReferenceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceData.swift; sourceTree = "<group>"; };
+		EAC2645B21A1F11400E011A2 /* AirLines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirLines.swift; sourceTree = "<group>"; };
 		EAD7B1CE218F49B500C23760 /* Amadeus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Amadeus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD7B1D1218F49B500C23760 /* Amadeus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Amadeus.h; sourceTree = "<group>"; };
 		EAD7B1D2218F49B500C23760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,6 +143,14 @@
 			path = "air-traffic";
 			sourceTree = "<group>";
 		};
+		EAC2645821A1F01700E011A2 /* ReferenceData */ = {
+			isa = PBXGroup;
+			children = (
+				EAC2645B21A1F11400E011A2 /* AirLines.swift */,
+			);
+			path = ReferenceData;
+			sourceTree = "<group>";
+		};
 		EAD7B1C4218F49B500C23760 = {
 			isa = PBXGroup;
 			children = (
@@ -168,9 +180,11 @@
 				EAD7B22F218F71CE00C23760 /* Client */,
 				EAD7B22B218F716500C23760 /* shopping */,
 				EAA8CCBC21A0D6F8004B2123 /* Travel */,
+				EAC2645821A1F01700E011A2 /* ReferenceData */,
 				EAD7B1DD218F5ADD00C23760 /* Amadeus.swift */,
 				EAD7B229218F674500C23760 /* Shopping.swift */,
 				EAA8CCBE21A0D71F004B2123 /* Travel.swift */,
+				EAC2645921A1F07800E011A2 /* ReferenceData.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -395,6 +409,7 @@
 				EAC2645321A1EBA800E011A2 /* Traveled.swift in Sources */,
 				EAD7B1DC218F519D00C23760 /* HTTPRequest.swift in Sources */,
 				EAA8CCB721A0CF58004B2123 /* FlightDestinations.swift in Sources */,
+				EAC2645A21A1F07800E011A2 /* ReferenceData.swift in Sources */,
 				EAC2645121A1EB1600E011A2 /* AirTraffic.swift in Sources */,
 				EAA8CCBB21A0D4D4004B2123 /* HotelOffers.swift in Sources */,
 				EAA8CCBF21A0D71F004B2123 /* Travel.swift in Sources */,
@@ -402,6 +417,7 @@
 				EAA8CCC121A0D72A004B2123 /* Analytics.swift in Sources */,
 				EAC2645721A1EE5F00E011A2 /* BusiestPeriod.swift in Sources */,
 				EAD7B1E0218F5B1100C23760 /* Client.swift in Sources */,
+				EAC2645C21A1F11400E011A2 /* AirLines.swift in Sources */,
 				EAC2645521A1ED8300E011A2 /* Booked.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
