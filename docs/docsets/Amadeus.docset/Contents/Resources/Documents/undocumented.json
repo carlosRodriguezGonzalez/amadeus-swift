@@ -51,63 +51,49 @@
     },
     {
       "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/AirLines.swift",
-      "line": 14,
-      "symbol": "AirLines",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/AirLines.swift",
-      "line": 18,
+      "line": 25,
       "symbol": "AirLines.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/AirLines.swift",
-      "line": 22,
-      "symbol": "AirLines.get(airlineCodes:onCompletion:)",
+      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Locations/Airports.swift",
+      "line": 25,
+      "symbol": "Airports.init(client:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Locations.swift",
+      "line": 24,
+      "symbol": "Locations.airports",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Locations.swift",
+      "line": 26,
+      "symbol": "Locations.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Urls/CheckinLinks.swift",
-      "line": 14,
-      "symbol": "CheckinLinks",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Urls/CheckinLinks.swift",
-      "line": 18,
+      "line": 25,
       "symbol": "CheckinLinks.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Urls/CheckinLinks.swift",
-      "line": 22,
-      "symbol": "CheckinLinks.get(airlineCode:onCompletion:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Urls.swift",
-      "line": 11,
-      "symbol": "Urls",
-      "symbol_kind": "source.lang.swift.decl.class",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Urls.swift",
-      "line": 13,
+      "line": 20,
       "symbol": "Urls.checkinLinks",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Urls.swift",
-      "line": 15,
+      "line": 22,
       "symbol": "Urls.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -135,7 +121,14 @@
     },
     {
       "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData.swift",
-      "line": 16,
+      "line": 15,
+      "symbol": "ReferenceData.locations",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData.swift",
+      "line": 17,
       "symbol": "ReferenceData.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
