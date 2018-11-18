@@ -32,8 +32,8 @@ public class Traveled{
     ///   Find the air traffic from Nice in August 2017
     ///
     ///     amadeus.travel.analytics.airTraffic.booked.get(
-    ///         originCityCode:"LON",
-    ///         period: "2016-05",
+    ///         originCityCode:"NCE",
+    ///         period: "2017-08",
     ///         onCompletion: {
     ///             data in ...}
     ///     )
