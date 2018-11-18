@@ -11,8 +11,10 @@ import Foundation
 public class AirTraffic{
     
     public let traveled:Traveled
+    public let booked:Booked
     
     public init(client:Client){
         traveled = Traveled(client: client)
+        booked = Booked(client: client)
     }
 }
