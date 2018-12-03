@@ -11,6 +11,6 @@ deploy:
     
 script:
     - set -o pipefail
-    - travis_retry xcodebuild -workspace NobodyHackathons.xcodeproj -scheme "AmadeusTests" -destination "platform=iOS Simulator,name=iPhone 6" build-for-testing test | xcpretty
+    - travis_retry xcodebuild -workspace Amadeus.xcodeproj -scheme "AmadeusTests" -destination "platform=iOS Simulator,name=iPhone 6" build-for-testing test | xcpretty
 
 #
