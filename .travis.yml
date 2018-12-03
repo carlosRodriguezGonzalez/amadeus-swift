@@ -11,6 +11,7 @@ deploy:
     
 script:
     - set -o pipefail
-    - travis_retry xcodebuild -workspace Amadeus.xcodeproj -scheme "AmadeusTests" -destination "platform=iOS Simulator,name=iPhone 6" build-for-testing test | xcpretty
+    - xcodebuild -workspace Amadeus.xcworkspace -scheme AmadeusTests -destination "platform=iOS Simulator,name=iPhone 6" build-for-testing test | xcpretty
 
-#
+#- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/${POD_NAME}.xcworkspace -scheme ${POD_NAME}-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
+#- pod lib lint
