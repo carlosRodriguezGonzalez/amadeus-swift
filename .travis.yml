@@ -1,5 +1,6 @@
 language:swift
 osx_image: xcode10
+xcode_sdk: iphonesimulator12.0
 deploy:
   provider: pages
   skip-cleanup: true
