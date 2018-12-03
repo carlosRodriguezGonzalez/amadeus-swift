@@ -44,11 +44,11 @@ public class BusiestPeriod{
     ///
     /// - Returns:
     ///    `JSON` object
-    public func get(cityCode:String, period:String, direction:String, onCompletion: @escaping (JSON) -> Void){
+    public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
-                let body = "?cityCode=\(cityCode)&period=\(period)&direction=\(direction)"
+                let body = generateGetParameters(data: data)
                 makeHTTPGetRequestAuth(busiestPeriod, auth: auth, body: body, onCompletion: {
                     data,err  in
                     if let error = err {

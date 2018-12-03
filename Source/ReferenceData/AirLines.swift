@@ -41,11 +41,11 @@ public class AirLines{
     ///
     /// - Returns:
     ///    `JSON` object
-    public func get(airlineCodes:String, onCompletion: @escaping (JSON) -> Void){
+    public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
-                let body = "?airlineCodes=\(airlineCodes)"
+                let body = generateGetParameters(data: data)
                 makeHTTPGetRequestAuth(airLines, auth: auth, body: body, onCompletion: {
                     data,err  in
                     if let error = err {

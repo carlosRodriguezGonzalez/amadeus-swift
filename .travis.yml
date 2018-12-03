@@ -1,17 +1,16 @@
 language: swift
 osx_image: xcode10
 xcode_sdk: iphonesimulator12.0
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep-history: true
-  on:
-    branch: master
-    
 script:
     - set -o pipefail
     - xcodebuild -workspace Amadeus.xcworkspace -scheme AmadeusTests -destination "platform=iOS Simulator,name=iPhone 6" build-for-testing test | xcpretty
-
+deploy:
+  - provider: pages
+    local-dir: docs
+    github-token: $GITHUB_TOKEN
+    skip-cleanup: true
+    keep-history: true
+    on:
+      branch: master
 #- set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/${POD_NAME}.xcworkspace -scheme ${POD_NAME}-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
 #- pod lib lint

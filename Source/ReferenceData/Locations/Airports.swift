@@ -43,11 +43,11 @@ public class Airports{
     ///
     /// - Returns:
     ///    `JSON` object
-    public func get(longitude:Double, latitude:Double, onCompletion: @escaping (JSON) -> Void){
+    public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
-                let body = "?longitude=\(longitude)&latitude=\(latitude)"
+                let body = generateGetParameters(data: data)
                 makeHTTPGetRequestAuth(airports, auth: auth, body: body, onCompletion: {
                     data,err  in
                     if let error = err {
