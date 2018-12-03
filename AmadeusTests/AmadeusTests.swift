@@ -269,7 +269,6 @@ class AmadeusTests: XCTestCase {
         let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
         
         let expectation = XCTestExpectation(description: "TimeOut")
-        
         ama.shopping.hotel(hotelId: "E5C6F41E18EDA2E60884A593B4F5BC17625044FC42DA6F2AA25172C4327FC565").offer(offerId: "1234").get(data:[:], onCompletion: {
             data in
             print("DATA ES: ", data)
@@ -278,7 +277,6 @@ class AmadeusTests: XCTestCase {
         })
         
         wait(for: [expectation], timeout: 60)
-        
     }
 
 }

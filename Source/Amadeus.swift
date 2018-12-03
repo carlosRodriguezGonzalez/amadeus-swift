@@ -23,6 +23,10 @@ public class Amadeus {
         referenceData = ReferenceData(client: client)
     }
     
+    public convenience init(){
+        self.init(client_id: "", client_secret: "")
+    }
+    
     
     
 }

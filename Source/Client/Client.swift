@@ -15,11 +15,10 @@ import SwiftyJSON
 public class Client {
     fileprivate let urlAuth = "v1/security/oauth2/token"
     private let grant_type: String
-    private var client_id: String
-    private var client_secret:String
+    public var client_id: String
+    public var client_secret:String
     private var access_token: String
     private var expires_time: Int
-    
     
     
     public init(client_id: String, client_secret:String) {
@@ -30,7 +29,6 @@ public class Client {
         self.access_token = ""
     }
     
-
     ///This method checks if the access_tocken needs to be renewed and, if needed, request the access_token,
     ///updates the token and save it, if you do not have to renew it returns the access_token that we had stored
     ///
@@ -97,21 +95,6 @@ public class Client {
         }else{
             self.expires_time = 0
         }
-    }
-    
-    
-    public func testAuth(){
-        let body = "grant_type=" + grant_type + "&client_id=" + client_id + "&client_secret=" + client_secret
-        makeHTTPPostRequest(urlAuth, body: body, onCompletion: { (data, err) in
-            print("data:", data)
-            
-            
-            if let error = err{
-                
-                print(error)
-            }
-            
-        })
     }
     
 }
