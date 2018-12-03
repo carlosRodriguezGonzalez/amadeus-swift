@@ -8,4 +8,9 @@ deploy:
   keep-history: true
   on:
     branch: master
+    
+script:
+    - set -o pipefail
+    - travis_retry xcodebuild -workspace NobodyHackathons.xcodeproj -scheme "AmadeusTests" -destination "platform=iOS Simulator,name=iPhone 6" build-for-testing test | xcpretty
 
+#
