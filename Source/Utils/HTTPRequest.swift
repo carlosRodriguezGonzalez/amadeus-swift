@@ -63,3 +63,17 @@ public func makeHTTPPostRequest(_ path: String, body: String, onCompletion: @esc
     })
     task.resume()
 }
+
+public func generateGetParameters(data: [String:String]) -> String{
+    var res = ""
+    var firstTime = true
+    for item in data {
+        if firstTime {
+            firstTime = false
+            res += "?\(item.key)=\(item.value)"
+        }else{
+            res += "&\(item.key)=\(item.value)"
+        }
+    }
+    return res
+}

@@ -44,11 +44,11 @@ public class FlightDestinations{
     ///
     /// - Returns:
     ///    `JSON` object
-    public func get(origin:String, maxPrice:Int, onCompletion: @escaping (JSON) -> Void){
+    public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
-                let body = "?origin=\(origin)&maxPrice=\(maxPrice)"
+                let body = generateGetParameters(data: data)
                 makeHTTPGetRequestAuth(flightDestinations, auth: auth, body: body, onCompletion: {
                     data,err  in
                     if let error = err {

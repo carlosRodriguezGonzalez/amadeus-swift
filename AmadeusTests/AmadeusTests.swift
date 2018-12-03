@@ -11,10 +11,10 @@ import Amadeus
 class AmadeusTests: XCTestCase {
     func testFlightOffers(){
         let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
-        
+
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.shopping.flightOffers.get(origin: "MAD", destination: "LUX", departureDate: "2018-12-10", onCompletion: {
+        ama.shopping.flightOffers.get(data: ["origin": "MAD", "destination": "LUX", "departureDate": "2018-12-10"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)
@@ -29,7 +29,7 @@ class AmadeusTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.shopping.flightDestinations.get(origin: "MAD", maxPrice: 10000, onCompletion: {
+        ama.shopping.flightDestinations.get(data: ["origin": "MAD", "maxPrice": "10000"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)
@@ -45,7 +45,7 @@ class AmadeusTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.shopping.flightDates.get(origin: "LHR", destination: "PAR", onCompletion: {
+        ama.shopping.flightDates.get(data:["origin": "LHR", "destination": "PAR"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)
@@ -61,7 +61,7 @@ class AmadeusTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.shopping.hotelOffers.get(cityCode: "PAR", onCompletion: {
+        ama.shopping.hotelOffers.get(data:["cityCode": "PAR"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)
@@ -77,7 +77,7 @@ class AmadeusTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.travel.analytics.fareSearch.get(origin: "NCE", sourceCountry: "FR", period: "2018-11", onCompletion: {
+        ama.travel.analytics.fareSearch.get(data:["origin": "NCE", "sourceCountry": "FR", "period": "2018-11"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)
@@ -93,7 +93,7 @@ class AmadeusTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.travel.analytics.airTraffic.traveled.get(originCityCode: "MAD", period: "2017-11", onCompletion: {
+        ama.travel.analytics.airTraffic.traveled.get(data:["originCityCode": "MAD", "period": "2017-11"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)
@@ -109,7 +109,7 @@ class AmadeusTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.travel.analytics.airTraffic.booked.get(originCityCode: "MAD", period: "2017-11", onCompletion: {
+        ama.travel.analytics.airTraffic.booked.get(data:["originCityCode": "MAD", "period": "2017-11"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)
@@ -125,7 +125,7 @@ class AmadeusTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.travel.analytics.airTraffic.busiestPeriod.get(cityCode: "MAD", period: "2017", direction: "ARRIVING", onCompletion: {
+        ama.travel.analytics.airTraffic.busiestPeriod.get(data:["cityCode": "MAD", "period": "2017", "direction": "ARRIVING"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)
@@ -141,7 +141,7 @@ class AmadeusTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.referenceData.airLines.get(airlineCodes: "BA", onCompletion: {
+        ama.referenceData.airLines.get(data:["airlineCodes": "BA"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)
@@ -157,7 +157,7 @@ class AmadeusTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.referenceData.urls.checkinLinks.get(airlineCode: "BA", onCompletion: {
+        ama.referenceData.urls.checkinLinks.get(data:["airlineCode": "BA"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)
@@ -173,7 +173,7 @@ class AmadeusTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.referenceData.locations.get(subType: "AIRPORT,CITY", keyword: "lon", onCompletion: {
+        ama.referenceData.locations.get(data:["subType": "AIRPORT,CITY", "keyword": "lon"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)
@@ -189,7 +189,24 @@ class AmadeusTests: XCTestCase {
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.referenceData.locations.airports.get(longitude: 49.0000, latitude: 2.55, onCompletion: {
+        ama.referenceData.locations.airports.get(data:["longitude": "49.0000", "latitude": "2.55"], onCompletion: {
+            data in
+            print("DATA ES: ", data)
+            XCTAssertNotNil(data)
+            expectation.fulfill()
+        })
+        
+        wait(for: [expectation], timeout: 60)
+        
+    }
+    
+    
+    func testSearchByDestination(){
+        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        
+        let expectation = XCTestExpectation(description: "TimeOut")
+        
+        ama.travel.analytics.airTraffic.searchedByDestination.get(data:["originCityCode":"MAD", "destinationCityCode":"NYC", "marketCountryCode": "ES", "searchPeriod": "2017-08"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)

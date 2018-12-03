@@ -51,11 +51,11 @@ public class FareSearch{
     /// - Returns:
     ///    `JSON` object
     ///
-    public func get(origin:String, sourceCountry:String, period:String, onCompletion: @escaping (JSON) -> Void){
+    public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
-                let body = "?origin=\(origin)&sourceCountry=\(sourceCountry)&period=\(period)"
+                let body = generateGetParameters(data: data)
                 makeHTTPGetRequestAuth(fareSearch, auth: auth, body: body, onCompletion: {
                     data,err  in
                     if let error = err {

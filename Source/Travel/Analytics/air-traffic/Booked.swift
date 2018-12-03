@@ -43,11 +43,11 @@ public class Booked{
     ///
     /// - Returns:
     ///    `JSON` object
-    public func get(originCityCode:String, period:String, onCompletion: @escaping (JSON) -> Void){
+    public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
-                let body = "?originCityCode=\(originCityCode)&period=\(period)"
+                let body = generateGetParameters(data: data)
                 makeHTTPGetRequestAuth(booked, auth: auth, body: body, onCompletion: {
                     data,err  in
                     if let error = err {

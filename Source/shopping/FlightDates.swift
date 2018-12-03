@@ -43,11 +43,11 @@ public class FlightDates{
     ///
     /// - Returns:
     ///    `JSON` object
-    public func get(origin:String, destination:String, onCompletion: @escaping (JSON) -> Void){
+    public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
-                let body = "?origin=\(origin)&destination=\(destination)"
+                let body = generateGetParameters(data: data)
                 makeHTTPGetRequestAuth(flightDates, auth: auth, body: body, onCompletion: {
                     data,err  in
                     if let error = err {
