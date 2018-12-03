@@ -21,14 +21,19 @@ public class Shopping {
     public let flightDestinations:FlightDestinations
     public let flightDates:FlightDates
     public let hotelOffers:HotelOffers
+    private let client: Client
     
     public init(client: Client) {
         flightOffers = FlightOffers(client: client)
         flightDestinations = FlightDestinations(client: client)
         flightDates = FlightDates(client: client)
         hotelOffers = HotelOffers(client: client)
+        self.client = client
     }
     
+    public func hotel(hotelId: String) -> Hotel{
+        return Hotel(client: self.client, hotelId: hotelId)
+    }
     
     
 }
