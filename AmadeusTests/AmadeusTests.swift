@@ -216,5 +216,69 @@ class AmadeusTests: XCTestCase {
         wait(for: [expectation], timeout: 60)
         
     }
+    
+    func testSearched(){
+        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        
+        let expectation = XCTestExpectation(description: "TimeOut")
+        
+        ama.travel.analytics.airTraffic.searched.get(data:["originCityCode":"MAD", "marketCountryCode": "ES", "searchPeriod": "2017-08"], onCompletion: {
+            data in
+            print("DATA ES: ", data)
+            XCTAssertNotNil(data)
+            expectation.fulfill()
+        })
+        
+        wait(for: [expectation], timeout: 60)
+        
+    }
+    
+    func testLocation(){
+        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        
+        let expectation = XCTestExpectation(description: "TimeOut")
+        
+        ama.referenceData.location(locationId: "ALHR").get(data:[:], onCompletion: {
+            data in
+            print("DATA ES: ", data)
+            XCTAssertNotNil(data)
+            expectation.fulfill()
+        })
+        
+        wait(for: [expectation], timeout: 60)
+        
+    }
+    
+    func testHotelHotelOffers(){
+        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        
+        let expectation = XCTestExpectation(description: "TimeOut")
+        
+        ama.shopping.hotel(hotelId: "E7AF2D58CC28EA77C3BF8BFBA1F5A003BA35F59AEE1BD4F2C9B83C2F86ED433D").hotelOffers.get(data:[:], onCompletion: {
+            data in
+            print("DATA ES: ", data)
+            XCTAssertNotNil(data)
+            expectation.fulfill()
+        })
+        
+        wait(for: [expectation], timeout: 60)
+        
+    }
+    
+    func testOffer(){
+        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        
+        let expectation = XCTestExpectation(description: "TimeOut")
+        
+        ama.shopping.hotel(hotelId: "E5C6F41E18EDA2E60884A593B4F5BC17625044FC42DA6F2AA25172C4327FC565").offer(offerId: "1234").get(data:[:], onCompletion: {
+            data in
+            print("DATA ES: ", data)
+            XCTAssertNotNil(data)
+            expectation.fulfill()
+        })
+        
+        wait(for: [expectation], timeout: 60)
+        
+    }
 
 }
