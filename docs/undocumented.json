@@ -1,306 +1,404 @@
 {
   "warnings": [
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Amadeus.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Amadeus.swift",
       "line": 14,
       "symbol": "Amadeus.client",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Amadeus.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Amadeus.swift",
       "line": 15,
       "symbol": "Amadeus.shopping",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Amadeus.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Amadeus.swift",
       "line": 16,
       "symbol": "Amadeus.travel",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Amadeus.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Amadeus.swift",
       "line": 17,
       "symbol": "Amadeus.referenceData",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Amadeus.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Amadeus.swift",
       "line": 19,
       "symbol": "Amadeus.init(client_id:client_secret:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Client/Client.swift",
-      "line": 25,
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Amadeus.swift",
+      "line": 26,
+      "symbol": "Amadeus.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Client/Client.swift",
+      "line": 18,
+      "symbol": "Client.client_id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Client/Client.swift",
+      "line": 19,
+      "symbol": "Client.client_secret",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Client/Client.swift",
+      "line": 24,
       "symbol": "Client.init(client_id:client_secret:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Client/Client.swift",
-      "line": 103,
-      "symbol": "Client.testAuth()",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/AirLines.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData/AirLines.swift",
       "line": 25,
       "symbol": "AirLines.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Locations/Airports.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData/Location.swift",
+      "line": 26,
+      "symbol": "Location.init(client:locationId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData/Locations/Airports.swift",
       "line": 25,
       "symbol": "Airports.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Locations.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData/Locations.swift",
       "line": 24,
       "symbol": "Locations.airports",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Locations.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData/Locations.swift",
       "line": 26,
       "symbol": "Locations.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Urls/CheckinLinks.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData/Urls/CheckinLinks.swift",
       "line": 25,
       "symbol": "CheckinLinks.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Urls.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData/Urls.swift",
       "line": 20,
       "symbol": "Urls.checkinLinks",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData/Urls.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData/Urls.swift",
       "line": 22,
       "symbol": "Urls.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData.swift",
       "line": 20,
       "symbol": "ReferenceData.airLines",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData.swift",
       "line": 21,
       "symbol": "ReferenceData.urls",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData.swift",
       "line": 22,
       "symbol": "ReferenceData.locations",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/ReferenceData.swift",
-      "line": 24,
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData.swift",
+      "line": 25,
       "symbol": "ReferenceData.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Shopping.swift",
-      "line": 20,
-      "symbol": "Shopping.flightOffers",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Shopping.swift",
-      "line": 21,
-      "symbol": "Shopping.flightDestinations",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Shopping.swift",
-      "line": 22,
-      "symbol": "Shopping.flightDates",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Shopping.swift",
-      "line": 23,
-      "symbol": "Shopping.hotelOffers",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Shopping.swift",
-      "line": 25,
-      "symbol": "Shopping.init(client:)",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/ReferenceData.swift",
+      "line": 32,
+      "symbol": "ReferenceData.location(locationId:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel/Analytics/AirTraffic.swift",
-      "line": 20,
-      "symbol": "AirTraffic.traveled",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel/Analytics/AirTraffic.swift",
-      "line": 21,
-      "symbol": "AirTraffic.booked",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel/Analytics/AirTraffic.swift",
-      "line": 22,
-      "symbol": "AirTraffic.busiestPeriod",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel/Analytics/AirTraffic.swift",
-      "line": 24,
-      "symbol": "AirTraffic.init(client:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel/Analytics/FareSearch.swift",
-      "line": 25,
-      "symbol": "FareSearch.init(client:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel/Analytics/air-traffic/Booked.swift",
-      "line": 25,
-      "symbol": "Booked.init(client:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel/Analytics/air-traffic/BusiestPeriod.swift",
-      "line": 25,
-      "symbol": "BusiestPeriod.init(client:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel/Analytics/air-traffic/Traveled.swift",
-      "line": 25,
-      "symbol": "Traveled.init(client:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel/Analytics.swift",
-      "line": 20,
-      "symbol": "Analytics.fareSearch",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel/Analytics.swift",
-      "line": 21,
-      "symbol": "Analytics.airTraffic",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel/Analytics.swift",
-      "line": 23,
-      "symbol": "Analytics.init(client:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel.swift",
-      "line": 21,
-      "symbol": "Travel.analytics",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Travel.swift",
-      "line": 23,
-      "symbol": "Travel.init(client:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Utils/HTTPRequest.swift",
-      "line": 12,
-      "symbol": "ServiceResponse",
-      "symbol_kind": "source.lang.swift.decl.typealias",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Utils/HTTPRequest.swift",
-      "line": 16,
-      "symbol": "makeHTTPGetRequestAuth(_:auth:body:onCompletion:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/Utils/HTTPRequest.swift",
-      "line": 41,
-      "symbol": "makeHTTPPostRequest(_:body:onCompletion:)",
-      "symbol_kind": "source.lang.swift.decl.function.free",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/shopping/FlightDates.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping/FlightDates.swift",
       "line": 25,
       "symbol": "FlightDates.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/shopping/FlightDestinations.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping/FlightDestinations.swift",
       "line": 25,
       "symbol": "FlightDestinations.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/shopping/FlightOffers.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping/FlightOffers.swift",
       "line": 25,
       "symbol": "FlightOffers.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift/Source/shopping/HotelOffers.swift",
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping/Hotel/HotelHotelOffers.swift",
+      "line": 26,
+      "symbol": "HotelHotelOffers.init(client:hotelId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping/Hotel/Offer.swift",
+      "line": 28,
+      "symbol": "Offer.init(client:hotelId:offerId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping/Hotel.swift",
+      "line": 25,
+      "symbol": "Hotel.hotelOffers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping/Hotel.swift",
+      "line": 27,
+      "symbol": "Hotel.init(client:hotelId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping/HotelOffers.swift",
       "line": 25,
       "symbol": "HotelOffers.init(client:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping.swift",
+      "line": 20,
+      "symbol": "Shopping.flightOffers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping.swift",
+      "line": 21,
+      "symbol": "Shopping.flightDestinations",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping.swift",
+      "line": 22,
+      "symbol": "Shopping.flightDates",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping.swift",
+      "line": 23,
+      "symbol": "Shopping.hotelOffers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping.swift",
+      "line": 26,
+      "symbol": "Shopping.init(client:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Shopping.swift",
+      "line": 34,
+      "symbol": "Shopping.hotel(hotelId:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/AirTraffic.swift",
+      "line": 20,
+      "symbol": "AirTraffic.traveled",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/AirTraffic.swift",
+      "line": 21,
+      "symbol": "AirTraffic.booked",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/AirTraffic.swift",
+      "line": 22,
+      "symbol": "AirTraffic.busiestPeriod",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/AirTraffic.swift",
+      "line": 23,
+      "symbol": "AirTraffic.searchedByDestination",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/AirTraffic.swift",
+      "line": 24,
+      "symbol": "AirTraffic.searched",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/AirTraffic.swift",
+      "line": 26,
+      "symbol": "AirTraffic.init(client:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/FareSearch.swift",
+      "line": 25,
+      "symbol": "FareSearch.init(client:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/air-traffic/Booked.swift",
+      "line": 25,
+      "symbol": "Booked.init(client:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/air-traffic/BusiestPeriod.swift",
+      "line": 25,
+      "symbol": "BusiestPeriod.init(client:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/air-traffic/Searched.swift",
+      "line": 25,
+      "symbol": "Searched.init(client:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/air-traffic/SearchedByDestination.swift",
+      "line": 25,
+      "symbol": "SearchedByDestination.init(client:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics/air-traffic/Traveled.swift",
+      "line": 25,
+      "symbol": "Traveled.init(client:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics.swift",
+      "line": 20,
+      "symbol": "Analytics.fareSearch",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics.swift",
+      "line": 21,
+      "symbol": "Analytics.airTraffic",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel/Analytics.swift",
+      "line": 23,
+      "symbol": "Analytics.init(client:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel.swift",
+      "line": 21,
+      "symbol": "Travel.analytics",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Travel.swift",
+      "line": 23,
+      "symbol": "Travel.init(client:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Utils/HTTPRequest.swift",
+      "line": 12,
+      "symbol": "ServiceResponse",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Utils/HTTPRequest.swift",
+      "line": 16,
+      "symbol": "makeHTTPGetRequestAuth(_:auth:body:onCompletion:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Utils/HTTPRequest.swift",
+      "line": 41,
+      "symbol": "makeHTTPPostRequest(_:body:onCompletion:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/sergioredondo/Documents/GIT/amadeus-swift/Source/Utils/HTTPRequest.swift",
+      "line": 67,
+      "symbol": "generateGetParameters(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.free",
+      "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/adriannaranjosanchez/Documents/Amadeus4Dev/pod/amadeus-swift"
+  "source_directory": "/Users/sergioredondo/Documents/GIT/amadeus-swift"
 }
