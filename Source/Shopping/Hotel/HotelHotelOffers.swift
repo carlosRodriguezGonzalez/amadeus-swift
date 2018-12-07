@@ -11,12 +11,12 @@ import SwiftyJSON
 
 fileprivate let hotelHotelOffers = "v1/shopping/hotels/${this.hotelId}/hotel-offers"
 
-/// A namespaced client for the `v1/shopping/hotel-offers` endpoints
+/// A namespaced client for the `v1/shopping/hotels/${this.hotelId}/hotel-offers` endpoints
 ///
 /// Access via the `Amadeus` object
 /// ```swift
 /// let amadeus = Amadeus(client_id, secret_id)
-/// amadeus.shopping.hotelOffers
+/// amadeus.shopping.hotelHotelOffers
 /// ```
 public class HotelHotelOffers{
     
@@ -28,21 +28,24 @@ public class HotelHotelOffers{
         self.hotelId = hotelId
     }
     
-    /// Find the list of hotels for a dedicated city.
+    /// Loads a namespaced path for a specific hotel offer with a specific hotel ID and offer ID.
     ///
     ///   ## Example
-    ///   Search for hotels in Paris
+    ///     Search for hotels in Paris
     ///
-    ///     amadeus.shopping.hotelOffers.get(
-    ///         cityCode:"PAR",
-    ///         onCompletion: {
-    ///             data in ...}
-    ///     )
+    ///     ama.shopping.hotel(hotelId: "E5C6F41E18EDA2E60884A593B4F5BC17625044FC42DA6F2AA25172C4327FC565").hotelOffers.get(
+    ///     data:["cityCode":"PAR"],
+    ///     onCompletion: {
+    ///             data in ...
+    ///     })
     /// - Parameters:
-    ///    - origin: `String` City IATA code.
+    ///    - cityCode: `String` City IATA code
+    ///    - latitude: `Double` atitude of geographic location to search around. Example: 52.5238
+    ///    - longitude: `Double` Longitude of geographic location to search around. Example: 13.3835
+    ///    - hotels: `String` Comma separated list of Amadeus hotel codes to request. Example: RTPAR001
     ///
     /// - Returns:
-    ///    `JSON` object
+    ///    JSON object
     public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in

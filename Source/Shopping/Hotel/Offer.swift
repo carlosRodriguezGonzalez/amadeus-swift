@@ -11,12 +11,12 @@ import SwiftyJSON
 
 fileprivate let offer = "/v1/shopping/hotels/${this.hotelId}/offers/${this.offerId}"
 
-/// A namespaced client for the `v1/shopping/hotel-offers` endpoints
+/// A namespaced client for the `/v1/shopping/hotels/${this.hotelId}/offers/${this.offerId}` endpoints
 ///
 /// Access via the `Amadeus` object
 /// ```swift
 /// let amadeus = Amadeus(client_id, secret_id)
-/// amadeus.shopping.hotelOffers
+/// amadeus.shopping.hotel(123).offer(234)
 /// ```
 public class Offer{
     
@@ -31,18 +31,14 @@ public class Offer{
         self.offerId = offerId
     }
     
-    /// Find the list of hotels for a dedicated city.
+    /// Get room and rate details
     ///
     ///   ## Example
-    ///   Search for hotels in Paris
+    ///   Search for hotel offers for hotel with ID 123
     ///
-    ///     amadeus.shopping.hotelOffers.get(
-    ///         cityCode:"PAR",
-    ///         onCompletion: {
-    ///             data in ...}
-    ///     )
+    ///     ama.shopping.hotel(hotelId: "E5C6F41E18EDA2E60884A593B4F5BC17625044FC42DA6F2AA25172C4327FC565").offer(offerId: "1234").get()
     /// - Parameters:
-    ///    - origin: `String` City IATA code.
+    ///    - offerId: `String` The ID of the hotel to search
     ///
     /// - Returns:
     ///    `JSON` object
