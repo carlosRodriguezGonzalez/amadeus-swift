@@ -3,11 +3,11 @@
   'case-sensitive': 'false',
   'roots': [{
     'type': 'directory',
-    'name': "/Users/charly/Desktop/Amadeus/Amadeus/build/Release-iphoneos/Amadeus.framework/Modules"
+    'name': "/Users/sergioredondo/Documents/GIT/amadeus-swift/build/Release-iphoneos/Amadeus.framework/Modules"
     'contents': [{
       'type': 'file',
       'name': "module.modulemap",
-      'external-contents': "/Users/charly/Desktop/Amadeus/Amadeus/build/Amadeus.build/Release-iphoneos/Amadeus.build/unextended-module.modulemap",
+      'external-contents': "/Users/sergioredondo/Documents/GIT/amadeus-swift/build/Amadeus.build/Release-iphoneos/Amadeus.build/unextended-module.modulemap",
     }]
   }]
 }
