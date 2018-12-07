@@ -32,8 +32,6 @@ public class Client {
     ///This method checks if the access_tocken needs to be renewed and, if needed, request the access_token,
     ///updates the token and save it, if you do not have to renew it returns the access_token that we had stored
     ///
-    /// - Important: This method use onCompletion.
-    ///
     /// - Returns:
     ///     access_token: `String` the client access token
     public func getAccessToken(onCompletion: @escaping (String) -> Void){
