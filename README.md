@@ -95,38 +95,20 @@ amaswua.shopping.hotel(hotelId: "E5C6F41E18EDA2E60884A593B4F5BC17625044FC42DA6F2
 
 ```
 
-You can make any arbitrary API call as well directly with the `.client.get` method:
-
-```swift
-amadeus.client.get(data: ["airlineCode": "BA"])
-```
 
 ## OnCompletion
 
 Every API call returns a `OnCompletion` that either resolves or rejects. Every
-resolved API call returns a `Response` object containing a `body` attribute
-with the raw response. If the API call contained a JSON response it will parse
-the JSON into the `.result` attribute. If this data also contains a `data` key,
-it will make that available as the `.data` attribute.
+resolved API call returns a `JSON` object.
 
-For a failed API call it returns a `ResponseError`
-containing the (parsed or unparsed) response, the request, and an error code.
+For a failed API call it returns a `JSON` object containing the (parsed or unparsed) response, the request, and an error code.
 
 ```swift
-
+amadeus.shopping.flightDestinations.get(data: ["origin": "MAD", "maxPrice": "10000"], onCompletion: {
+    data in
+     print(data) => The raw body
+})
 ```
-
-## Pagination
-
-If an API endpoint supports pagination, the other pages are available under the
-`.next`, `.previous`, `.last` and `.first` methods.
-
-```swift
-
-```
-
-If a page is not available, the response will resolve to `null`.
-
 
 
 ## List of supported endpoints
