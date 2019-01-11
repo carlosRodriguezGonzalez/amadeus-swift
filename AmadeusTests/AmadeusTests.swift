@@ -11,6 +11,13 @@ import Amadeus
 class AmadeusTests: XCTestCase {
     func testFlightOffers(){
         let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        
+        print("argunments:", ProcessInfo.processInfo.arguments)
+        print("TESTARGS:", ProcessInfo.processInfo.environment)
+        print("el argumento:", ProcessInfo.processInfo.arguments[0])
+        print("el argumento:", ProcessInfo.processInfo.arguments[1])
+        print("VAR EXTRA:", ProcessInfo.processInfo.environment["client_id"])
+
 
         let expectation = XCTestExpectation(description: "TimeOut")
         
