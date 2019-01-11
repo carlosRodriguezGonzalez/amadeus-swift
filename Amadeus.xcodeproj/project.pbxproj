@@ -691,8 +691,8 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
-					"client_id=$(client_id)",
 					"client_secret=$(client_secret)",
+					"client_id=$(client_id)",
 				);
 				INFOPLIST_FILE = AmadeusTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
@@ -714,6 +714,12 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2DFQ7N4YZX;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"client_secret=$(client_secret)",
+					"client_id=$(client_id)",
+				);
 				INFOPLIST_FILE = AmadeusTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
