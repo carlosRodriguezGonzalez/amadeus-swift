@@ -52,7 +52,7 @@ public class HotelHotelOffers{
             if auth != "error" {
                 let body = generateGetParameters(data: data)
                 let base = "v1/shopping/hotels/\(self.hotelId)/hotel-offers"
-                makeHTTPGetRequestAuth(base, auth: auth, body: body, onCompletion: {
+                makeHTTPGetRequestAuth(base, auth: auth, body: body, client: self.client, onCompletion: {
                     data,err  in
                     if let error = err {
                         onCompletion(JSON(parseJSON: "{error:\(error)}"))

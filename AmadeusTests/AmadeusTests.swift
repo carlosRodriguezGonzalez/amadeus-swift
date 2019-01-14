@@ -10,11 +10,11 @@ import XCTest
 import Amadeus
 class AmadeusTests: XCTestCase {
     func testFlightOffers(){
-        let ama = Amadeus(client_id: "", client_secret: "")
+        let ama = Amadeus(client_id: "", client_secret: "", ssl: true, host: "test.api.amadeus.com/")
 
         let expectation = XCTestExpectation(description: "TimeOut")
         
-        ama.shopping.flightOffers.get(data: ["origin": "MAD", "destination": "LUX", "departureDate": "2018-12-10"], onCompletion: {
+        ama.shopping.flightOffers.get(data: ["origin": "MAD", "destination": "LUX", "departureDate": "2019-01-16"], onCompletion: {
             data in
             print("DATA ES: ", data)
             XCTAssertNotNil(data)

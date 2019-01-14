@@ -57,7 +57,7 @@ public class SearchedByDestination{
             (auth) in
             if auth != "error" {
                 let body = generateGetParameters(data: data)
-                makeHTTPGetRequestAuth(searchedByDestination, auth: auth, body: body, onCompletion: {
+                makeHTTPGetRequestAuth(searchedByDestination, auth: auth, body: body, client: self.client, onCompletion: {
                     data,err  in
                     if let error = err {
                         onCompletion(JSON(parseJSON: "{error:\(error)}"))

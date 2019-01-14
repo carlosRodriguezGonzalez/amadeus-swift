@@ -46,7 +46,7 @@ public class CheckinLinks{
             (auth) in
             if auth != "error" {
                 let body = generateGetParameters(data: data)
-                makeHTTPGetRequestAuth(checkinLinks, auth: auth, body: body, onCompletion: {
+                makeHTTPGetRequestAuth(checkinLinks, auth: auth, body: body, client: self.client, onCompletion: {
                     data,err  in
                     if let error = err {
                         onCompletion(JSON(parseJSON: "{error:\(error)}"))

@@ -11,10 +11,17 @@ import SwiftyJSON
 
 public typealias ServiceResponse = (JSON, NSError?) -> Void
 
-fileprivate let baseURL = "https://test.api.amadeus.com/"
+public func makeHTTPGetRequestAuth(_ path: String, auth: String, body: String, client:Client, onCompletion: @escaping ServiceResponse) {
+    var url:String = ""
+    
+    if client.ssl {
+        url += "https://"
+    }else{
+        url += "http://"
+    }
+    url += client.host + path + body
+    print("URLf:", url)
 
-public func makeHTTPGetRequestAuth(_ path: String, auth: String, body: String, onCompletion: @escaping ServiceResponse) {
-    let url = baseURL + path + body
     let request = NSMutableURLRequest(url: URL(string: url)!)
     //request.httpBody = body.data(using: String.Encoding.utf8);
     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
@@ -38,8 +45,16 @@ public func makeHTTPGetRequestAuth(_ path: String, auth: String, body: String, o
     task.resume()
 }
 
-public func makeHTTPPostRequest(_ path: String, body: String, onCompletion: @escaping ServiceResponse) {
-    let url = baseURL + path
+public func makeHTTPPostRequest(_ path: String, body: String, ssl:Bool, host:String, onCompletion: @escaping ServiceResponse) {
+    var url:String = ""
+    
+    if ssl {
+        url += "https://"
+    }else{
+        url += "http://"
+    }
+    url += host + path
+    print("URL:", url)
     let request = NSMutableURLRequest(url: URL(string: url)!)
     request.httpMethod = "POST"
     request.httpBody = body.data(using: String.Encoding.utf8);

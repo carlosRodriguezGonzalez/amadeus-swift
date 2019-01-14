@@ -53,7 +53,7 @@ public class Searched{
             (auth) in
             if auth != "error" {
                 let body = generateGetParameters(data: data)
-                makeHTTPGetRequestAuth(searched, auth: auth, body: body, onCompletion: {
+                makeHTTPGetRequestAuth(searched, auth: auth, body: body, client: self.client, onCompletion: {
                     data,err  in
                     if let error = err {
                         onCompletion(JSON(parseJSON: "{error:\(error)}"))
