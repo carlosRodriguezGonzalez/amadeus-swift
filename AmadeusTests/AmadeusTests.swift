@@ -10,14 +10,7 @@ import XCTest
 import Amadeus
 class AmadeusTests: XCTestCase {
     func testFlightOffers(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
-        
-        print("argunments:", ProcessInfo.processInfo.arguments)
-        print("TESTARGS:", ProcessInfo.processInfo.environment)
-        print("el argumento:", ProcessInfo.processInfo.arguments[0])
-        print("el argumento:", ProcessInfo.processInfo.arguments[1])
-        print("VAR EXTRA:", ProcessInfo.processInfo.environment["client_id"])
-
+        let ama = Amadeus(client_id: "", client_secret: "")
 
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -32,7 +25,7 @@ class AmadeusTests: XCTestCase {
         
     }
     func testFlightDestinations(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -48,7 +41,7 @@ class AmadeusTests: XCTestCase {
     }
 
     func testFlightDates(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -64,7 +57,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testHotelOffers(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -80,7 +73,7 @@ class AmadeusTests: XCTestCase {
     }
 
     func testFareSearch(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -96,7 +89,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testTraveled(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -112,7 +105,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testBooked(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -128,7 +121,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testBusiestPeriod(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -144,7 +137,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testAirLines(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -160,7 +153,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testCheckinLinks(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -176,7 +169,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testLocations(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -192,7 +185,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testAirports(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -209,7 +202,7 @@ class AmadeusTests: XCTestCase {
     
     
     func testSearchByDestination(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -225,7 +218,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testSearched(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -241,7 +234,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testLocation(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -257,7 +250,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testHotelHotelOffers(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -273,7 +266,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testOffer(){
-        let ama = Amadeus(client_id: "VAywvANdPdsxwP6NCA8eKikGdF57QUcF", client_secret: "GCAZRSicTFpR6xbU")
+        let ama = Amadeus(client_id: "", client_secret: "")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         ama.shopping.hotel(hotelId: "E5C6F41E18EDA2E60884A593B4F5BC17625044FC42DA6F2AA25172C4327FC565").offer(offerId: "1234").get(data:[:], onCompletion: {
