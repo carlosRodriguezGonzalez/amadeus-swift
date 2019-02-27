@@ -10,16 +10,17 @@ import Foundation
 import SwiftyJSON
 
 public typealias ServiceResponse = (JSON, NSError?) -> Void
+public typealias AmadeusResponse = (Response?, Error?) -> Void
 
 public func makeHTTPGetRequestAuth(_ path: String, auth: String, body: String, client:Client, onCompletion: @escaping ServiceResponse) {
     var url:String = ""
     
-    if client.ssl {
+    if client.configuration.ssl {
         url += "https://"
     }else{
         url += "http://"
     }
-    url += client.host + path + body
+    url += client.configuration.host + path + body
     print("URLf:", url)
 
     let request = NSMutableURLRequest(url: URL(string: url)!)
@@ -63,7 +64,9 @@ public func makeHTTPPostRequest(_ path: String, body: String, ssl:Bool, host:Str
     
     let session = URLSession.shared
     let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error -> Void in
-        
+        if let httpResponse = response as? HTTPURLResponse {
+            print("RESPONSEEEEEEE",httpResponse.statusCode)
+        }
         do{
             if let jsonData = data {
                 let json:JSON = try JSON(data: jsonData)
@@ -79,7 +82,7 @@ public func makeHTTPPostRequest(_ path: String, body: String, ssl:Bool, host:Str
     task.resume()
 }
 
-public func generateGetParameters(data: [String:String]) -> String{
+private func generateGetParameters(data: [String:String]) -> String{
     var res = ""
     var firstTime = true
     for item in data {
@@ -91,4 +94,51 @@ public func generateGetParameters(data: [String:String]) -> String{
         }
     }
     return res
+}
+
+public func generateURL(client:Client, path:String, data:[String:String]) -> String{
+    var url = ""
+    if client.configuration.ssl {
+        url += "https://"
+    }else{
+        url += "http://"
+    }
+    
+    url += path
+    
+    url += generateGetParameters(data: data)
+    return url
+}
+
+public func getRequest(path: String, auth: String, client:Client, onCompletion: @escaping AmadeusResponse) {
+    
+    let url = client.configuration.host + path
+    print("URLf:", url)
+    
+    let request = NSMutableURLRequest(url: URL(string: url)!)
+    
+    if client.configuration.customAppId != ""{
+        request.addValue(client.configuration.customAppId, forHTTPHeaderField: "User-Agent")
+    }
+    
+    request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+    request.setValue("Bearer \(auth)", forHTTPHeaderField: "Authorization")
+    
+    let session = URLSession.shared
+    let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error -> Void in
+        let amadeusResponse:Response?
+        let amadeusError: Error?
+        
+        if let httpResponse = response as? HTTPURLResponse {
+            amadeusResponse = Response(response: httpResponse, data:data!)
+            amadeusError = nil
+            
+        }else{
+            amadeusResponse = nil
+            amadeusError = error
+        }
+        
+        onCompletion(amadeusResponse,amadeusError)
+    })
+    task.resume()
 }

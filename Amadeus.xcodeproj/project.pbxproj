@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		68269131F900673BC83ED62A /* Pods_Amadeus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CB197647685023AB491A8B /* Pods_Amadeus.framework */; };
 		D4AB351CC0326B121C8DA4C6 /* Pods_AmadeusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3637D24B29675BD53705DDE /* Pods_AmadeusTests.framework */; };
+		EA35EA2C221C710F00445799 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA35EA2B221C710F00445799 /* Response.swift */; };
 		EAA8CCB721A0CF58004B2123 /* FlightDestinations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8CCB621A0CF58004B2123 /* FlightDestinations.swift */; };
 		EAA8CCB921A0D186004B2123 /* FlightDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8CCB821A0D186004B2123 /* FlightDates.swift */; };
 		EAA8CCBB21A0D4D4004B2123 /* HotelOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8CCBA21A0D4D4004B2123 /* HotelOffers.swift */; };
@@ -39,6 +40,7 @@
 		EAD7B223218F663D00C23760 /* Amadeus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD7B1CE218F49B500C23760 /* Amadeus.framework */; };
 		EAD7B22A218F674500C23760 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B229218F674500C23760 /* Shopping.swift */; };
 		EAD7B22D218F719E00C23760 /* FlightOffers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7B22C218F719E00C23760 /* FlightOffers.swift */; };
+		EAD999062227058600B206BA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD999052227058600B206BA /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		D3637D24B29675BD53705DDE /* Pods_AmadeusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmadeusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36989E0E6371B7357EDB4B6 /* Pods-Amadeus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Amadeus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Amadeus/Pods-Amadeus.debug.xcconfig"; sourceTree = "<group>"; };
 		E6FECA82AE43B379B30F0579 /* Pods-AmadeusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmadeusTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmadeusTests/Pods-AmadeusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA35EA2B221C710F00445799 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		EAA8CCB621A0CF58004B2123 /* FlightDestinations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDestinations.swift; sourceTree = "<group>"; };
 		EAA8CCB821A0D186004B2123 /* FlightDates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDates.swift; sourceTree = "<group>"; };
 		EAA8CCBA21A0D4D4004B2123 /* HotelOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelOffers.swift; sourceTree = "<group>"; };
@@ -91,6 +94,7 @@
 		EAD7B222218F663D00C23760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAD7B229218F674500C23760 /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
 		EAD7B22C218F719E00C23760 /* FlightOffers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightOffers.swift; sourceTree = "<group>"; };
+		EAD999052227058600B206BA /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD7B1DB218F519D00C23760 /* HTTPRequest.swift */,
+				EA35EA2B221C710F00445799 /* Response.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -274,6 +279,7 @@
 		EAD7B22F218F71CE00C23760 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				EAD999052227058600B206BA /* Configuration.swift */,
 				EAD7B1DF218F5B1100C23760 /* Client.swift */,
 			);
 			path = Client;
@@ -466,6 +472,7 @@
 				EAD7B1DC218F519D00C23760 /* HTTPRequest.swift in Sources */,
 				EAA8CCB721A0CF58004B2123 /* FlightDestinations.swift in Sources */,
 				EAC2645A21A1F07800E011A2 /* ReferenceData.swift in Sources */,
+				EAD999062227058600B206BA /* Configuration.swift in Sources */,
 				EAC2645121A1EB1600E011A2 /* AirTraffic.swift in Sources */,
 				EAC6306221B5B1F7006A5258 /* Location.swift in Sources */,
 				EAC2645E21A1F9BD00E011A2 /* Urls.swift in Sources */,
@@ -476,6 +483,7 @@
 				EAA8CCB921A0D186004B2123 /* FlightDates.swift in Sources */,
 				EAC2646621A1FF4300E011A2 /* Airports.swift in Sources */,
 				EAA8CCC121A0D72A004B2123 /* Analytics.swift in Sources */,
+				EA35EA2C221C710F00445799 /* Response.swift in Sources */,
 				EAC2645721A1EE5F00E011A2 /* BusiestPeriod.swift in Sources */,
 				EAC6306421B5B4D6006A5258 /* Hotel.swift in Sources */,
 				EAD7B1E0218F5B1100C23760 /* Client.swift in Sources */,

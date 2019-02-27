@@ -18,19 +18,19 @@ public class Amadeus {
     
     
     
-    public init(client_id: String, client_secret:String, ssl:Bool, host:String) {
-        client = Client(client_id: client_id, client_secret: client_secret, ssl:ssl, host:host)
+    public init(client_id: String, client_secret:String, enviroment:[String:Any]) {
+        client = Client(client_id: client_id, client_secret: client_secret, enviroment: enviroment)
         shopping = Shopping(client: client)
         travel = Travel(client: client)
         referenceData = ReferenceData(client: client)
     }
     
     public convenience init(){
-        self.init(client_id: "", client_secret: "", ssl: false, host:"test.api.amadeus.com")
+        self.init(client_id: "", client_secret: "", enviroment: [:])
     }
     
     public convenience init(client_id: String, client_secret:String){
-        self.init(client_id:client_id, client_secret:client_secret, ssl:false, host:"test.api.amadeus.com")
+        self.init(client_id:client_id, client_secret:client_secret,enviroment: [:])
     }
     
 }

@@ -17,18 +17,18 @@ public class Client {
     private let grant_type: String
     public var client_id: String
     public var client_secret:String
-    public var ssl:Bool
-    public var host:String
+    
+    public var configuration:Configuration
+    
     private var access_token: String
     private var expires_time: Int
     
     
-    public init(client_id: String, client_secret:String, ssl:Bool, host:String) {
+    public init(client_id: String, client_secret:String, enviroment:[String:Any]) {
         self.grant_type =  "client_credentials"
         self.client_id = client_id
         self.client_secret = client_secret
-        self.ssl = ssl
-        self.host = host
+        self.configuration = Configuration(enviroment: enviroment)
         self.expires_time = 0
         self.access_token = ""
     }
@@ -66,7 +66,7 @@ public class Client {
     ///Fetches a new Access Token using the credentials from the client.
     private func getAuthToken(onCompletion: @escaping (String) -> Void){
         let body = "grant_type=" + grant_type + "&client_id=" + client_id + "&client_secret=" + client_secret
-        makeHTTPPostRequest(urlAuth, body: body, ssl:ssl, host:host, onCompletion: { (data, err) in
+        makeHTTPPostRequest(urlAuth, body: body, ssl:configuration.ssl, host:configuration.host, onCompletion: { (data, err) in
             print("auth:", data)
             if let error = data["error"].string{
                 onCompletion(error)

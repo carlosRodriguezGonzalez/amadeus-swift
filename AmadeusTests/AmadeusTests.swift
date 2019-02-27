@@ -8,7 +8,14 @@
 
 import XCTest
 import Amadeus
+
 class AmadeusTests: XCTestCase {
+    
+    func testConfiguration(){
+        let ama = Amadeus(client_id: "cuak", client_secret: "pato", enviroment: ["ssl":false])
+        print(ama.client.configuration.ssl)
+    }
+    /*
     func testFlightOffers(){
         let ama = Amadeus(client_id: "", client_secret: "", ssl: true, host: "test.api.amadeus.com/")
 
@@ -89,7 +96,7 @@ class AmadeusTests: XCTestCase {
     }
     
     func testTraveled(){
-        let ama = Amadeus(client_id: "", client_secret: "")
+        let ama = Amadeus(client_id: "", client_secret: "", ssl: true, host: "test.api.amadeus.com/")
         
         let expectation = XCTestExpectation(description: "TimeOut")
         
@@ -278,5 +285,6 @@ class AmadeusTests: XCTestCase {
         
         wait(for: [expectation], timeout: 60)
     }
+ */
 
 }
