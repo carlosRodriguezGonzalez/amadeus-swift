@@ -51,23 +51,27 @@ public class FareSearch{
     /// - Returns:
     ///    `JSON` object
     ///
-    public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
+    public func get(data: [String:String], onCompletion: @escaping AmadeusResponse){
         client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
-                let body = generateGetParameters(data: data)
-                makeHTTPGetRequestAuth(fareSearch, auth: auth, body: body, client: self.client, onCompletion: {
+                let path = self.generateURLFareSearch(data: data)
+                getRequest(path: path, auth: auth, client: self.client, onCompletion: {
                     data,err  in
                     if let error = err {
-                        onCompletion(JSON(parseJSON: "{error:\(error)}"))
+                        onCompletion(nil,error)
                     }else{
-                        onCompletion(data)
+                        onCompletion(data,nil)
                     }
                 })
             }else{
-                onCompletion("error")
+                onCompletion(nil,nil)
             }
         })
+    }
+    
+    private func generateURLFareSearch(data:[String:String]) -> String{
+        return generateURL(client: self.client, path: fareSearch, data: data)
     }
     
 }

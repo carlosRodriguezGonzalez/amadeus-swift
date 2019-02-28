@@ -11,20 +11,18 @@ import SwiftyJSON
 
 public class Response{
     
-    var body:JSON
-    var meta:JSON
-    var headers:JSON
-    var data:HTTPURLResponse
-    var responseCode:Int
+    public var body:JSON
+    public var meta:JSON
+    public var headers:JSON
+    public var data:HTTPURLResponse
+    public var responseCode:Int
     
     public init(response:HTTPURLResponse, data:Data?){
         self.responseCode = response.statusCode
         self.data = response
-        
         // HEADERS
         if response.allHeaderFields.count > 0{
             self.headers = JSON.init(response.allHeaderFields)
-            print("HEADERS: ",self.headers as Any)
         }else{
             self.headers = JSON.null
         }
@@ -49,8 +47,6 @@ public class Response{
             self.meta = JSON.null
         }
         //
-        print("RESPOSNE CODE:",self.responseCode)
-        print("DATARepsonse:",self.meta)
         
     }
     

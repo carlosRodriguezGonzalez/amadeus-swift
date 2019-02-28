@@ -33,4 +33,103 @@ public class Amadeus {
         self.init(client_id:client_id, client_secret:client_secret,enviroment: [:])
     }
     
+    private func getUrl(data:Response, keyword:String) -> String{
+        return data.body["meta"]["links"][keyword].string ?? "error"
+        
+    }
+    
+    public func next(data: Response, onCompletion: @escaping AmadeusResponse){
+        client.getAccessToken(onCompletion: {
+            (auth) in
+            if auth != "error" {
+                let path = self.getUrl(data: data, keyword: "next")
+                print("PATH ->", path)
+                if path != "error"{
+                    getRequest(path: path, auth: auth, client: self.client, onCompletion: {
+                        data,err  in
+                        if let error = err {
+                            onCompletion(nil,error)
+                        }else{
+                            onCompletion(data,nil)
+                        }
+                    })
+                }else{
+                    onCompletion(nil,nil)
+                }
+            }else{
+                onCompletion(nil,nil)
+            }
+        })
+    }
+    
+    public func previous(data: Response, onCompletion: @escaping AmadeusResponse){
+        client.getAccessToken(onCompletion: {
+            (auth) in
+            if auth != "error" {
+                let path = self.getUrl(data: data, keyword: "previous")
+                print("PATH ->", path)
+                if path != "error"{
+                    getRequest(path: path, auth: auth, client: self.client, onCompletion: {
+                        data,err  in
+                        if let error = err {
+                            onCompletion(nil,error)
+                        }else{
+                            onCompletion(data,nil)
+                        }
+                    })
+                }else{
+                    onCompletion(nil,nil)
+                }
+            }else{
+                onCompletion(nil,nil)
+            }
+        })
+    }
+    
+    public func last(data: Response, onCompletion: @escaping AmadeusResponse){
+        client.getAccessToken(onCompletion: {
+            (auth) in
+            if auth != "error" {
+                let path = self.getUrl(data: data, keyword: "last")
+                print("PATH ->", path)
+                if path != "error"{
+                    getRequest(path: path, auth: auth, client: self.client, onCompletion: {
+                        data,err  in
+                        if let error = err {
+                            onCompletion(nil,error)
+                        }else{
+                            onCompletion(data,nil)
+                        }
+                    })
+                }else{
+                    onCompletion(nil,nil)
+                }
+            }else{
+                onCompletion(nil,nil)
+            }
+        })
+    }
+    public func first(data: Response, onCompletion: @escaping AmadeusResponse){
+        client.getAccessToken(onCompletion: {
+            (auth) in
+            if auth != "error" {
+                let path = self.getUrl(data: data, keyword: "first")
+                print("PATH ->", path)
+                if path != "error"{
+                    getRequest(path: path, auth: auth, client: self.client, onCompletion: {
+                        data,err  in
+                        if let error = err {
+                            onCompletion(nil,error)
+                        }else{
+                            onCompletion(data,nil)
+                        }
+                    })
+                }else{
+                    onCompletion(nil,nil)
+                }
+            }else{
+                onCompletion(nil,nil)
+            }
+        })
+    }
 }

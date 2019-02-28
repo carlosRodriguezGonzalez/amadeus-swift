@@ -44,23 +44,27 @@ public class FlightDestinations{
     ///
     /// - Returns:
     ///    `JSON` object
-    public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
+    public func get(data: [String:String], onCompletion: @escaping AmadeusResponse){
         client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
-                let body = generateGetParameters(data: data)
-                makeHTTPGetRequestAuth(flightDestinations, auth: auth, body: body, client: self.client, onCompletion: {
+                let path = self.generateURLFlightDestinations(data: data)
+                getRequest(path: path, auth: auth, client: self.client, onCompletion: {
                     data,err  in
                     if let error = err {
-                        onCompletion(JSON(parseJSON: "{error:\(error)}"))
+                        onCompletion(nil,error)
                     }else{
-                        onCompletion(data)
+                        onCompletion(data,nil)
                     }
                 })
             }else{
-                onCompletion("error")
+                onCompletion(nil,nil)
             }
         })
+    }
+    
+    private func generateURLFlightDestinations(data:[String:String]) -> String{
+        return generateURL(client: self.client, path: flightDestinations, data: data)
     }
     
 }

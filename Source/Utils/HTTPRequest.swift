@@ -54,7 +54,7 @@ public func makeHTTPPostRequest(_ path: String, body: String, ssl:Bool, host:Str
     }else{
         url += "http://"
     }
-    url += host + path
+    url += host + "/" + path
     print("URL:", url)
     let request = NSMutableURLRequest(url: URL(string: url)!)
     request.httpMethod = "POST"
@@ -65,7 +65,7 @@ public func makeHTTPPostRequest(_ path: String, body: String, ssl:Bool, host:Str
     let session = URLSession.shared
     let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error -> Void in
         if let httpResponse = response as? HTTPURLResponse {
-            print("RESPONSEEEEEEE",httpResponse.statusCode)
+            //print("RESPONSEEEEEEE",httpResponse.statusCode)
         }
         do{
             if let jsonData = data {
@@ -104,7 +104,7 @@ public func generateURL(client:Client, path:String, data:[String:String]) -> Str
         url += "http://"
     }
     
-    url += path
+    url += client.configuration.host + "/" + path
     
     url += generateGetParameters(data: data)
     return url
@@ -112,8 +112,7 @@ public func generateURL(client:Client, path:String, data:[String:String]) -> Str
 
 public func getRequest(path: String, auth: String, client:Client, onCompletion: @escaping AmadeusResponse) {
     
-    let url = client.configuration.host + path
-    print("URLf:", url)
+    let url = path
     
     let request = NSMutableURLRequest(url: URL(string: url)!)
     
@@ -128,7 +127,6 @@ public func getRequest(path: String, auth: String, client:Client, onCompletion: 
     let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error -> Void in
         let amadeusResponse:Response?
         let amadeusError: Error?
-        
         if let httpResponse = response as? HTTPURLResponse {
             amadeusResponse = Response(response: httpResponse, data:data!)
             amadeusError = nil

@@ -46,6 +46,7 @@ public class HotelHotelOffers{
     ///
     /// - Returns:
     ///    JSON object
+    /*
     public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in
@@ -64,6 +65,6 @@ public class HotelHotelOffers{
                 onCompletion("error")
             }
         })
-    }
+    }*/
     
 }

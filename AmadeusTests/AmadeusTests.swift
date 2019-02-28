@@ -12,8 +12,22 @@ import Amadeus
 class AmadeusTests: XCTestCase {
     
     func testConfiguration(){
-        let ama = Amadeus(client_id: "cuak", client_secret: "pato", enviroment: ["ssl":false])
-        print(ama.client.configuration.ssl)
+//        let ama = Amadeus(client_id: "cuak", client_secret: "pato", enviroment: ["ssl":true])
+//        print(ama.client.configuration.ssl)
+        let ama = Amadeus(client_id: "", client_secret: "")
+        
+        let expectation = XCTestExpectation(description: "TimeOut")
+        ama.referenceData.locations.airports.get(data:["longitude": "-3.5694800", "latitude": "40.4918100"], onCompletion: {
+            data,error in
+            
+            ama.next(data: data!, onCompletion: {data,err in
+                XCTAssertNotNil(data)
+                expectation.fulfill()
+
+            })
+        })
+        
+        wait(for: [expectation], timeout: 60)
     }
     /*
     func testFlightOffers(){

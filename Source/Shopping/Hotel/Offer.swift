@@ -42,6 +42,7 @@ public class Offer{
     ///
     /// - Returns:
     ///    `JSON` object
+    /*
     public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
         client.getAccessToken(onCompletion: {
             (auth) in
@@ -60,6 +61,6 @@ public class Offer{
                 onCompletion("error")
             }
         })
-    }
+    }*/
     
 }

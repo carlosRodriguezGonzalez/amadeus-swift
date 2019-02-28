@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-fileprivate let flightDates = "v1/shopping/hotel-offers"
+fileprivate let hotelOffers = "v1/shopping/hotel-offers"
 
 /// A namespaced client for the `v1/shopping/hotel-offers` endpoints
 ///
@@ -41,23 +41,27 @@ public class HotelOffers{
     ///
     /// - Returns:
     ///    `JSON` object
-    public func get(data: [String:String], onCompletion: @escaping (JSON) -> Void){
+    public func get(data: [String:String], onCompletion: @escaping AmadeusResponse){
         client.getAccessToken(onCompletion: {
             (auth) in
             if auth != "error" {
-                let body = generateGetParameters(data: data)
-                makeHTTPGetRequestAuth(flightDates, auth: auth, body: body, client: self.client, onCompletion: {
+                let path = self.generateURLHotelOffers(data: data)
+                getRequest(path: path, auth: auth, client: self.client, onCompletion: {
                     data,err  in
                     if let error = err {
-                        onCompletion(JSON(parseJSON: "{error:\(error)}"))
+                        onCompletion(nil,error)
                     }else{
-                        onCompletion(data)
+                        onCompletion(data,nil)
                     }
                 })
             }else{
-                onCompletion("error")
+                onCompletion(nil,nil)
             }
         })
+    }
+    
+    private func generateURLHotelOffers(data:[String:String]) -> String{
+        return generateURL(client: self.client, path: hotelOffers, data: data)
     }
     
 }
