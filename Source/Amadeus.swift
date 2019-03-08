@@ -43,7 +43,6 @@ public class Amadeus {
             (auth) in
             if auth != "error" {
                 let path = self.getUrl(data: data, keyword: "next")
-                print("PATH ->", path)
                 if path != "error"{
                     getRequest(path: path, auth: auth, client: self.client, onCompletion: {
                         data,err  in
@@ -67,7 +66,6 @@ public class Amadeus {
             (auth) in
             if auth != "error" {
                 let path = self.getUrl(data: data, keyword: "previous")
-                print("PATH ->", path)
                 if path != "error"{
                     getRequest(path: path, auth: auth, client: self.client, onCompletion: {
                         data,err  in
@@ -91,7 +89,6 @@ public class Amadeus {
             (auth) in
             if auth != "error" {
                 let path = self.getUrl(data: data, keyword: "last")
-                print("PATH ->", path)
                 if path != "error"{
                     getRequest(path: path, auth: auth, client: self.client, onCompletion: {
                         data,err  in
@@ -114,7 +111,6 @@ public class Amadeus {
             (auth) in
             if auth != "error" {
                 let path = self.getUrl(data: data, keyword: "first")
-                print("PATH ->", path)
                 if path != "error"{
                     getRequest(path: path, auth: auth, client: self.client, onCompletion: {
                         data,err  in

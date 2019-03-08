@@ -21,7 +21,7 @@ class AmadeusTests: XCTestCase {
             data,error in
             
             ama.next(data: data!, onCompletion: {data,err in
-                XCTAssertNotNil(data)
+                XCTAssertNotNil(data as Any)
                 expectation.fulfill()
 
             })

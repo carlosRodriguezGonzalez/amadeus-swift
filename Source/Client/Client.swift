@@ -67,7 +67,6 @@ public class Client {
     private func getAuthToken(onCompletion: @escaping (String) -> Void){
         let body = "grant_type=" + grant_type + "&client_id=" + client_id + "&client_secret=" + client_secret
         makeHTTPPostRequest(urlAuth, body: body, ssl:configuration.ssl, host:configuration.host, onCompletion: { (data, err) in
-            print("auth:", data)
             if let error = data["error"].string{
                 onCompletion(error)
             }else{

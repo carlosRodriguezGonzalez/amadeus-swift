@@ -64,9 +64,7 @@ public func makeHTTPPostRequest(_ path: String, body: String, ssl:Bool, host:Str
     
     let session = URLSession.shared
     let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error -> Void in
-        if let httpResponse = response as? HTTPURLResponse {
-            //print("RESPONSEEEEEEE",httpResponse.statusCode)
-        }
+        
         do{
             if let jsonData = data {
                 let json:JSON = try JSON(data: jsonData)
