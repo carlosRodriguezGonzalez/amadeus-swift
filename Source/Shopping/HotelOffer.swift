@@ -1,5 +1,5 @@
 //
-//  HotelOffers.swift
+//  HotelOffer.swift
 //  Amadeus
 //
 //  Created by Charly Maxter on 17/11/2018.
@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-fileprivate let hotelOffers = "v2/shopping/hotel-offers"
+fileprivate let hotelOffer = "v2/shopping/hoteloffers/:hotel_id"
 
 /// A namespaced client for the `v1/shopping/hotel-offers` endpoints
 ///
@@ -18,29 +18,17 @@ fileprivate let hotelOffers = "v2/shopping/hotel-offers"
 /// let amadeus = Amadeus(client_id, secret_id)
 /// amadeus.shopping.hotelOffers
 /// ```
-public class HotelOffers{
+public class HotelOffer{
     
     private var client: Client
+    private var hotelId: String
     
-    public init(client:Client) {
+    public init(client:Client, hotelId: String) {
         self.client = client
+        self.hotelId = hotelId
     }
     
-    /// Find the list of hotels for a dedicated city.
-    ///
-    ///   ## Example
-    ///   Search for hotels in Paris
-    ///
-    ///     amadeus.shopping.hotelOffers.get(
-    ///         cityCode:"PAR",
-    ///         onCompletion: {
-    ///             data in ...}
-    ///     )
-    /// - Parameters:
-    ///    - origin: `String` City IATA code.
-    ///
-    /// - Returns:
-    ///    `JSON` object
+    
     public func get(data: [String:String], onCompletion: @escaping AmadeusResponse){
         client.getAccessToken(onCompletion: {
             (auth) in
@@ -61,7 +49,8 @@ public class HotelOffers{
     }
     
     private func generateURLHotelOffers(data:[String:String]) -> String{
-        return generateURL(client: self.client, path: hotelOffers, data: data)
+        let path = "v2/shopping/hoteloffers/" + self.hotelId + "/"
+        return generateURL(client: self.client, path: path, data: data)
     }
     
 }

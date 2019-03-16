@@ -10,7 +10,7 @@ import XCTest
 import Amadeus
 
 class AmadeusTests: XCTestCase {
-  
+    
     func testGenerateURL() {
         let ama = Amadeus();
         XCTAssertEqual( generateURL(client: ama.client, path: "path", data: ["prueba":"prueba"]), "https://test.api.amadeus.com/path?prueba=prueba", "Prueba")
@@ -62,5 +62,10 @@ class AmadeusTests: XCTestCase {
         let conf = Configuration(enviroment: ["port":8080,"ssl":false])
         XCTAssertFalse(conf.ssl)
         XCTAssertEqual(conf.port, 8080)
+    }
+    func testMiau(){
+        let ama = Amadeus();
+        ama.shopping.
+        XCTAssertEqual(1,1)
     }
 }
